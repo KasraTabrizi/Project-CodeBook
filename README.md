@@ -9,10 +9,10 @@ Kasra (PM), Nathalie, Aline & Erin present
 ### The project
 A social media website which connects programmers with projects. You can upload projects to search for collaborators or be a collaborator searching for a project. 
 
-The plan
-We will use Trello to keep track of the workflow. (Team KANE Board CODEBOOK) 
-We will use GlooMaps to build a basic sitemap. (https://www.gloomaps.com/qT2XmEiPvF)
-We will use Figma to build the WireFrame (https://www.figma.com/file/qI4x2XAq0LolICiAq134hW/Untitled?node-id=0%3A1)
+### The plan
+* We will use Trello to keep track of the workflow. (Team KANE Board CODEBOOK) 
+* We will use GlooMaps to build a basic sitemap. (https://www.gloomaps.com/qT2XmEiPvF)
+* We will use Figma to build the WireFrame (https://www.figma.com/file/qI4x2XAq0LolICiAq134hW/Untitled?node-id=0%3A1)
 
 ### The meeting
 * We plan to work collaboratively but focus on making single pages each. Backend (SQL and PHP) will be mostly be handled by Kasra with involvement from everyone. 

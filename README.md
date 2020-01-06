@@ -20,7 +20,7 @@ We will use GlooMaps to build a basic sitemap. (https://www.gloomaps.com/qT2XmEi
 * Kasra will host the Github and will manage the merges. 
 * We will work only on our own branch. 
 * HTML baseplate to be created after the wireframes are done. This will have basic layout in bootstrap already in place. 
-* 
+
 ### Technologies
 * HTML
 * BOOTSTRAP

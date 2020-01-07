@@ -1,0 +1,22 @@
+.filterContainer {
+  background-color: rgb(240, 229, 229);
+  display: flex;
+  justify-content: flex-start;
+}
+.filterHeader {
+  font-weight: bold;
+  position: relative;
+}
+.filterChild {
+  margin: 1rem;
+  font-size: 2rem;
+}
+.filterChild button,
+.dropdown-item {
+  font-size: 2rem;
+}
+
+/* HOVER COLOR CHANGE NOT WORKING
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus{
+    background-color: rgb(109, 141, 201);
+} */

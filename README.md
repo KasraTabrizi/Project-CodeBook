@@ -26,7 +26,7 @@ A social media website which connects programmers with projects. You can upload 
 * HTML
 * BOOTSTRAP
 * PHP
-* SQL
+* SQL (MongoDB)
 
 ### Details: 
 

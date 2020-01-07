@@ -28,24 +28,31 @@
 .resultsContainer {
   background-color: rgb(228, 236, 225);
   width: 100vw;
-  height: auto;
   margin: 0 auto;
   font-size: 2rem;
 }
 .resultsChild {
   background-color: rgb(212, 202, 202);
-  margin: 1.5rem;
-  width: 50vw;
-  max-width: 60vw;
+  width: 80vw;
+  margin: 2rem auto;
 }
 .resultsChild,
 .col {
   border: 1px solid black;
 }
+
+.col-8 .row {
+  display: block;
+  margin: 0 auto;
+}
 .col-8 p {
   font-size: 1.25rem;
   background-color: #fff;
   width: 75%;
+  max-width: 500px;
+  margin: 0;
+  padding: 1rem;
+  border: 1px dotted black;
 }
 .col-4 {
   margin: 0 auto;
@@ -58,7 +65,7 @@
 
 .btnGithub,
 .btnApply {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-weight: bold;
 }

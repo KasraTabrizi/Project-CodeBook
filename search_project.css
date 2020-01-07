@@ -1,3 +1,5 @@
+    /*CSS for filter dropdown buttons*/
+
 .filterContainer {
   background-color: rgb(240, 229, 229);
   display: flex;
@@ -20,3 +22,43 @@
 .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus{
     background-color: rgb(109, 141, 201);
 } */
+
+    /*CSS FOR SEARCH RESULTS*/
+
+    .resultsContainer{
+        background-color: rgb(228, 236, 225);
+        width: 100vw;
+        height: auto;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+    .resultsChild{
+        background-color: rgb(212, 202, 202);
+        margin: 1.5rem;
+        width: 50vw;
+        max-width: 60vw;
+    }
+    .resultsChild, .col{
+        border: 1px solid black;
+    }
+    .col-8 p{
+        background-color: #fff;
+        width: 75%;
+    }
+    .col-4{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        
+    }
+    .col-4 .row{
+        height: 50%;
+    }
+    .btnGithub, .btnApply {
+    
+        margin: 1rem auto;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }

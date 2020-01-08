@@ -30,10 +30,11 @@
             return $database;
         }
 
-        //INSERT ONE DOCUMENT TO THE COLLECTION
+        //INSERT ONE DOCUMENT TO THE COLLECTION AND WILL RETURN THE ID OF THE NEW DOCUMENT
         function createOneDB($database, $collectionName, $data){
             $collection = $database->CodeBook->$collectionName;
             $result = $collection->insertOne($data);
+            return $result->getInsertedId();
         }
 
         //READ ONE DOCUMENT OF A COLLECTION
@@ -81,8 +82,13 @@
         $database = connectDB($username, $password);
 
         //TEST INSERT
-
+        $data = array("skill" => "Svelte");
+        $result = createOneDB($database, $collections['skills'], $data);
+        var_dump($result);
+        
         //TEST READ ONE DOCUMENT
+
+
 
         //TEST READ EVERYTHING
         // $result = readCollection($database, $collections['users']);
@@ -92,12 +98,12 @@
         // }
 
         //UPDATE ONE DOCUMENT
-
+        
 
         //DELETE ONE DOCUMENT
-        $data = array("skill" => "CSS");
-        $result = deleteOneDB($database, $collections['skills'], $data);
-        var_dump($result);
+        // $data = array("skill" => "CSS");
+        // $result = deleteOneDB($database, $collections['skills'], $data);
+        // var_dump($result);
 
         //DELETE MULTIPLE DOCUMENTS
         // $data = array("email" => "test");

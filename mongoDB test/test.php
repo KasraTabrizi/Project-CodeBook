@@ -85,19 +85,22 @@
         //TEST READ ONE DOCUMENT
 
         //TEST READ EVERYTHING
-        $result = readCollection($database, $collections['users']);
-        var_dump(collectionLength($database, $collections['users']));
-        foreach($result as $item){
-            var_dump($item["_id"]);
-        }
+        // $result = readCollection($database, $collections['users']);
+        // var_dump(collectionLength($database, $collections['users']));
+        // foreach($result as $item){
+        //     var_dump($item["_id"]);
+        // }
 
         //UPDATE ONE DOCUMENT
 
 
         //DELETE ONE DOCUMENT
 
-        //DELETE MULTIPLE DOCUMENTS
 
+        //DELETE MULTIPLE DOCUMENTS
+        $data = array("email" => "test");
+        $result = deleteManyDB($database, $collections['users'], $data);
+        var_dump($result);
     ?>
 </body>
 </html>

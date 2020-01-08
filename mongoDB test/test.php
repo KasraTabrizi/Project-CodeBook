@@ -95,12 +95,14 @@
 
 
         //DELETE ONE DOCUMENT
-
+        $data = array("skill" => "CSS");
+        $result = deleteOneDB($database, $collections['skills'], $data);
+        var_dump($result);
 
         //DELETE MULTIPLE DOCUMENTS
-        $data = array("email" => "test");
-        $result = deleteManyDB($database, $collections['users'], $data);
-        var_dump($result);
+        // $data = array("email" => "test");
+        // $result = deleteManyDB($database, $collections['users'], $data);
+        // var_dump($result);
     ?>
 </body>
 </html>

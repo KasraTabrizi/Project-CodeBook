@@ -64,6 +64,13 @@
             return $result;
         }
 
+        //DELETE MULTIPLE DOCUMENTs FROM A COLLECTION
+        function deleteManyDB($database,$collectionName,$data){
+            $collection = $database->CodeBook->$collectionName;
+            $result = $collection->deleteMany($data);
+            return $result;
+        }
+
         //
         function collectionLength($database,$collectionName){
             $collection = $database->CodeBook->$collectionName;

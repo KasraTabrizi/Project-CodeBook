@@ -27,27 +27,34 @@
             return $database;
         }
 
-        function createDB($database, $collectionName, $data){
+        //INSERT ONE DOCUMENT TO THE COLLECTION
+        function createOneDB($database, $collectionName, $data){
             $collection = $database->CodeBook->$collectionName;
             $result = $collection->insertOne($data);
         }
 
+        //READ ONE DOCUMENT OF A COLLECTION
         function readOneDB($database, $collectionName, $data){
             $collection = $database->CodeBook->$collectionName;
             $result = $collection->findOne($data);
             return $result;
         }
 
+        //READ AN ENTIRE COLLECTION
         function readCollection($database, $collectionName){
             $collection = $database->CodeBook->$collectionName;
             $result = $collection->find();
             return $result;
         }
 
-        function updateDB($database,$collectionName,$data,$replaceData){
-            
+        //UPDATE A DOCUMENT IN A COLLECTION
+        function updateDB($database,$collectionName,$data,$newData){
+            $collection = $database->CodeBook->$collectionName;
+            $result = $collection->updateOne($date, ['$set' => $newData]);
+            return $result;
         }
 
+        //DELETE A DOCUMENT FROM A COLLECTION
         function deleteDB($database,$collectionName,$data){
 
         }

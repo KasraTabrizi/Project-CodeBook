@@ -15,10 +15,8 @@
         $collections = array("users" => "Users", "skills" => "Skills", "project" => "Projects");
         $usersKey = array("email", "password", "first_name", "last_name", "job_title", "github", "profile_image", "skills", "collaborators", "projects");
         $skillsKey = array("skill", "icon-image");
-        $skillName = array("HTML", "CSS", "Bootstrap", "TailWind", "Bulma", "Sass", 
-                        "PHP", "MySQL", "MongoDB", "Javascript", "Typescript", "Vue.js", 
-                        "React.js", "Angular", "Three.js", "OpenGL", "SVG", "Node.js", 
-                        "Laravel", "Express.js", "Svelte", "jQuery", "Python", "WebPack", "Django", "Flask", "Ruby", "PostgreSQL", "MongoDB");
+        $skillName = array("HTML","SVG", "CSS", "Sass","Bootstrap","Tailwind","Javascript","jQuery","Typescript","Vue.js","React.js","Angular","Three.js",
+                           "Svelte","Node.js","Express.js","OpenGL","PHP", "Laravel","Python","WebPack","Django","Flask","Ruby","MySQL","MongoDB","PostgreSQL");
         $skillIconImage = array();
         $projectsKey = array("title", "description", "github", "skills", "number_of_collaborators", "collaborators");
 

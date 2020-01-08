@@ -1,0 +1,71 @@
+/*CSS for filter dropdown buttons*/
+
+.filterContainer {
+  background-color: rgb(240, 229, 229);
+  display: flex;
+  justify-content: flex-start;
+}
+.filterHeader {
+  font-weight: bold;
+  position: relative;
+}
+.filterChild {
+  margin: 1rem;
+  font-size: 2rem;
+}
+.filterChild button,
+.dropdown-item {
+  font-size: 2rem;
+}
+
+/* HOVER COLOR CHANGE NOT WORKING
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus{
+    background-color: rgb(109, 141, 201);
+} */
+
+/*CSS FOR SEARCH RESULTS*/
+
+.resultsContainer {
+  background-color: rgb(228, 236, 225);
+  width: 100vw;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+.resultsChild {
+  background-color: rgb(212, 202, 202);
+  width: 80vw;
+  margin: 2rem auto;
+}
+.resultsChild,
+.col {
+  border: 1px solid black;
+}
+
+.col-8 .row {
+  display: block;
+  margin: 0 auto;
+}
+.col-8 p {
+  font-size: 1.25rem;
+  background-color: #fff;
+  width: 75%;
+  max-width: 500px;
+  margin: 0;
+  padding: 1rem;
+  border: 1px dotted black;
+}
+.col-4 {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnGithub,
+.btnApply {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

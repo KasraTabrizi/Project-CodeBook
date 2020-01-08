@@ -96,6 +96,8 @@
 
         //DELETE ONE DOCUMENT
 
+        //DELETE MULTIPLE DOCUMENTS
+
     ?>
 </body>
 </html>

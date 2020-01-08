@@ -1,6 +1,5 @@
-    
-    <footer class="container-fluid">
+    <footer class="container-fluid fixed-bottom">
         <div class="p-3 mb-2 bg-secondary text-white copyright text-center">
-        Copyright &copy; 2020 <span> KANE Projects</span>
+            Copyright &copy; 2020 <span> KANE Projects</span>
         </div>
-   </footer>
+    </footer>

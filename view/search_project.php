@@ -25,7 +25,7 @@
         >
           SKILLS
         </button>
-        <div class="dropdown-menu">
+        <div class="dropdown-menu filterChild">
           <a href="#" class="dropdown-item">JavaScript</a>
           <a href="#" class="dropdown-item">PHP</a>
           <a href="#" class="dropdown-item">React</a>
@@ -51,6 +51,7 @@
           <a href="#" class="dropdown-item">>50 collaborators</a>
         </div>
       </div>
+
       <button class="btn btn-primary filterChild">SEARCH</button>
     </div>
 

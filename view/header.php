@@ -11,13 +11,14 @@
       </button>
 
       <ul class="nav justify-content-end">
-      
         <li class="nav-item">
-          <a class="nav-link active text-white" href="#">HOME</a>
+        <a class="btn btn-secondary" href="#" role="button">HOME</a>
         </li> 
   
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#">PROJECTS</a>
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        PROJECTS
+        </button>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="#">Create Project</a>
             <a class="dropdown-item" href="#">Search Project</a>
@@ -25,15 +26,17 @@
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#">COLLABORATORS</a>
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        COLLABORATORS
+        </button>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="#">Search Collaborators</a>
           </div>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">LOGOUT</a>
-        </li>
+        <a class="btn btn-secondary" href="#" role="button">LOGOUT</a>
+        </li> 
       </ul>
     </nav>
   </div>

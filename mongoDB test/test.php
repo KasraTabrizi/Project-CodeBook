@@ -17,8 +17,8 @@
         $skillsKey = array("skill", "icon-image");
         $skillName = array("HTML", "CSS", "Bootstrap", "TailWind", "Bulma", "Sass", 
                         "PHP", "MySQL", "MongoDB", "Javascript", "Typescript", "Vue.js", 
-                        "React", "Angular", "Three.js", "OpenGL", "SVG", "Node.js", 
-                        "Laravel", "Express.js");
+                        "React.js", "Angular", "Three.js", "OpenGL", "SVG", "Node.js", 
+                        "Laravel", "Express.js", "Svelte", "jQuery", "Python", "WebPack", "Django", "Flask", "Ruby", "PostgreSQL", "MongoDB");
         $skillIconImage = array();
         $projectsKey = array("title", "description", "github", "skills", "number_of_collaborators", "collaborators");
 
@@ -72,7 +72,7 @@
             return $result;
         }
 
-        //
+        //GET LENGTH OF A COLLECTION
         function collectionLength($database,$collectionName){
             $collection = $database->CodeBook->$collectionName;
             return $collection->count();
@@ -101,7 +101,7 @@
         //UPDATE ONE DOCUMENT
         // $newData = array("skill" => "PHP");
         // $data = array("skill" => "PHP: Hypertext Preprocessor");
-        // $result = updateDB($database, $collections['skills'], $data, $newData );
+        // $result = updateOneDB($database, $collections['skills'], $data, $newData );
         // var_dump($result);
         
         //DELETE ONE DOCUMENT

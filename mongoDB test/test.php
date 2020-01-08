@@ -58,7 +58,7 @@
         }
 
         //DELETE A DOCUMENT FROM A COLLECTION
-        function deleteDB($database,$collectionName,$data){
+        function deleteOneDB($database,$collectionName,$data){
             $collection = $database->CodeBook->$collectionName;
             $result = $collection->deleteOne($data);
             return $result;

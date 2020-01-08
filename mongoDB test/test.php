@@ -82,13 +82,14 @@
         $database = connectDB($username, $password);
 
         //TEST INSERT
-        $data = array("skill" => "Svelte");
-        $result = createOneDB($database, $collections['skills'], $data);
-        var_dump($result);
-        
+        // $data = array("skill" => "Svelte");
+        // $result = createOneDB($database, $collections['skills'], $data);
+        // var_dump($result);
+
         //TEST READ ONE DOCUMENT
-
-
+        $data = array("skill" => "PHP");
+        $result = readOneDB($database, $collections['skills'], $data);
+        var_dump((string)$result['_id']);
 
         //TEST READ EVERYTHING
         // $result = readCollection($database, $collections['users']);

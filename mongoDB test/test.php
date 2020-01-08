@@ -52,7 +52,7 @@
         }
 
         //UPDATE A DOCUMENT IN A COLLECTION
-        function updateDB($database,$collectionName,$data,$newData){
+        function updateOneDB($database,$collectionName,$data,$newData){
             $collection = $database->CodeBook->$collectionName;
             $result = $collection->updateOne($data, ['$set' => $newData]);
             return $result;

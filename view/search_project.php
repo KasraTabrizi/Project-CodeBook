@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <?php include('styles.php'); ?>
-  <link rel="stylesheet" href="/search_project.css" />
+  <?php include('bootstrap_styles.php'); ?>
+  <link rel="stylesheet" href="../styles/search_project.css" />
   <title>Document</title>
 </head>
   <body>
@@ -162,7 +162,7 @@
     <!--FOOTER-->
 
     <?php include('footer.php'); ?>
-    <?php include('scripts.php'); ?>
+    <?php include('bootstrap_scripts.php'); ?>
   </body>
 </html>
 

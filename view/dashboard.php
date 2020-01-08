@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <?php include('styles.php'); ?>
+    <?php include('bootstrap_styles.php'); ?>
 </head>
 <body>
 <?php include('header.php'); ?>
@@ -13,6 +13,6 @@
 
 
 <?php include('footer.php'); ?>
-<?php include('scripts.php'); ?>
+<?php include('bootstrap_scripts.php'); ?>
 </body>
 </html>

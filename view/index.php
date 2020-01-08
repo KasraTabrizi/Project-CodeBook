@@ -7,12 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
   
-    <?php include('styles.php'); ?>
+    <?php include('bootstrap_styles.php'); ?>
   
     <link rel="stylesheet" href="../styles/style_erin.css">
   
 </head>
-
 
 <body>
 
@@ -84,6 +83,6 @@
         </div>
 
 <?php include('footer.php'); ?>
-<?php include('scripts.php'); ?>
+<?php include('bootstrap_scripts.php'); ?>
 </body>
 </html>

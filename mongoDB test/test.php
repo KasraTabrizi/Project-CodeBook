@@ -54,7 +54,7 @@
         //UPDATE A DOCUMENT IN A COLLECTION
         function updateDB($database,$collectionName,$data,$newData){
             $collection = $database->CodeBook->$collectionName;
-            $result = $collection->updateOne($date, ['$set' => $newData]);
+            $result = $collection->updateOne($data, ['$set' => $newData]);
             return $result;
         }
 
@@ -87,9 +87,9 @@
         // var_dump($result);
 
         //TEST READ ONE DOCUMENT
-        $data = array("skill" => "PHP");
-        $result = readOneDB($database, $collections['skills'], $data);
-        var_dump((string)$result['_id']);
+        // $data = array("skill" => "PHP");
+        // $result = readOneDB($database, $collections['skills'], $data);
+        // var_dump((string)$result['_id']);
 
         //TEST READ EVERYTHING
         // $result = readCollection($database, $collections['users']);
@@ -99,8 +99,11 @@
         // }
 
         //UPDATE ONE DOCUMENT
+        // $newData = array("skill" => "PHP");
+        // $data = array("skill" => "PHP: Hypertext Preprocessor");
+        // $result = updateDB($database, $collections['skills'], $data, $newData );
+        // var_dump($result);
         
-
         //DELETE ONE DOCUMENT
         // $data = array("skill" => "CSS");
         // $result = deleteOneDB($database, $collections['skills'], $data);

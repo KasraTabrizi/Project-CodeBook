@@ -1,4 +1,5 @@
 <header class="container-fluid">
+
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 
       <!--Brand Logo-->
@@ -34,13 +35,13 @@
 
       <ul class="nav justify-content-end">
         <li class="nav-item">
-        <a class="btn btn-secondary" href="#" role="button">HOME</a>
-        </li> 
-  
+          <a class="btn btn-secondary" href="#" role="button">HOME</a>
+        </li>
+
         <li class="nav-item dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        PROJECTS
-        </button>
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            PROJECTS
+          </button>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="#">Create Project</a>
             <a class="dropdown-item" href="#">Search Project</a>
@@ -48,17 +49,17 @@
         </li>
 
         <li class="nav-item dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        COLLABORATORS
-        </button>
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            COLLABORATORS
+          </button>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="#">Search Collaborators</a>
           </div>
         </li>
 
         <li class="nav-item">
-        <a class="btn btn-secondary" href="#" role="button">LOGOUT</a>
-        </li> 
+          <a class="btn btn-secondary" href="#" role="button">LOGOUT</a>
+        </li>
       </ul>
     </nav>-->
   </div>

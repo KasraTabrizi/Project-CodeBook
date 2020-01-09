@@ -25,7 +25,7 @@
         >
           SKILLS
         </button>
-        <div class="dropdown-menu">
+        <div class="dropdown-menu ">
           <a href="#" class="dropdown-item">JavaScript</a>
           <a href="#" class="dropdown-item">PHP</a>
           <a href="#" class="dropdown-item">React</a>
@@ -33,24 +33,7 @@
           <a href="#" class="dropdown-item">Node.js</a>
         </div>
       </div>
-      <!-- <div class="dropdown filterChild">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          COLLABORATORS
-        </button>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item">1-5 collaborators</a>
-          <a href="#" class="dropdown-item">5-10 collaborators</a>
-          <a href="#" class="dropdown-item">10-20 collaborators</a>
-          <a href="#" class="dropdown-item">20-50 collaborators</a>
-          <a href="#" class="dropdown-item">>50 collaborators</a>
-        </div>
-      </div> -->
+    
       <button class="btn btn-primary filterChild">SEARCH</button>
     </div>
 
@@ -69,11 +52,11 @@
             <p class="card-text">Backend Developer at SilverFin</p>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <img width="50px" src="/github-icon.png" /> Link to Github
+                <img width="50px" src="../resources/icons/github-icon.png" /> Link to Github
                 Account
               </li>
               <li class="list-group-item">
-                <img width="50px" src="/linkedin-icon.png" alt="" /> Linkedin
+                <img width="50px" src="../resources/icons/linkedin-icon.png" alt="" /> Linkedin
               </li>
             </ul>
           </div>
@@ -92,11 +75,11 @@
             <p class="card-text">Fullstack developer at Showpad</p>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <img width="50px" src="/github-icon.png" /> Link to Github
+                <img width="50px" src="../resources/icons/github-icon.png" /> Link to Github
                 Account
               </li>
               <li class="list-group-item">
-                <img width="50px" src="/linkedin-icon.png" alt="" /> Linkedin
+                <img width="50px" src="../resources/icons/linkedin-icon.png" alt="" /> Linkedin
               </li>
             </ul>
           </div>
@@ -115,11 +98,11 @@
             <p class="card-text">React Developer at Sumocoders</p>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <img width="50px" src="/github-icon.png" /> Link to Github
+                <img width="50px" src="../resources/icons/github-icon.png" /> Link to Github
                 Account
               </li>
               <li class="list-group-item">
-                <img width="50px" src="/linkedin-icon.png" alt="" /> Linkedin
+                <img width="50px" src="../resources/icons/linkedin-icon.png" alt="" /> Linkedin
               </li>
             </ul>
           </div>
@@ -143,11 +126,11 @@
             <p class="card-text">Backend Developer at SilverFin</p>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <img width="50px" src="/github-icon.png" /> Link to Github
+                <img width="50px" src="../resources/icons/github-icon.png" /> Link to Github
                 Account
               </li>
               <li class="list-group-item">
-                <img width="50px" src="/linkedin-icon.png" alt="" /> Linkedin
+                <img width="50px" src="../resources/icons/linkedin-icon.png" alt="" /> Linkedin
               </li>
             </ul>
           </div>
@@ -166,11 +149,11 @@
             <p class="card-text">Fullstack developer at Showpad</p>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <img width="50px" src="/github-icon.png" /> Link to Github
+                <img width="50px" src="../resources/icons/github-icon.png" /> Link to Github
                 Account
               </li>
               <li class="list-group-item">
-                <img width="50px" src="/linkedin-icon.png" alt="" /> Linkedin
+                <img width="50px" src="../resources/icons/linkedin-icon.png" alt="" /> Linkedin
               </li>
             </ul>
           </div>
@@ -189,11 +172,11 @@
             <p class="card-text">React Developer at Sumocoders</p>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <img width="50px" src="/github-icon.png" /> Link to Github
+                <img width="50px" src="../resources/icons/github-icon.png" /> Link to Github
                 Account
               </li>
               <li class="list-group-item">
-                <img width="50px" src="/linkedin-icon.png" alt="" /> Linkedin
+                <img width="50px" src="../resources/icons/linkedin-icon.png" alt="" /> Linkedin
               </li>
             </ul>
           </div>
@@ -216,11 +199,11 @@
             <p class="card-text">Backend Developer at SilverFin</p>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <img width="50px" src="/github-icon.png" /> Link to Github
+                <img width="50px" src="../resources/icons/github-icon.png" /> Link to Github
                 Account
               </li>
               <li class="list-group-item">
-                <img width="50px" src="/linkedin-icon.png" alt="" /> Linkedin
+                <img width="50px" src="../resources/icons/linkedin-icon.png" alt="" /> Linkedin
               </li>
             </ul>
           </div>
@@ -239,11 +222,11 @@
             <p class="card-text">Fullstack developer at Showpad</p>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <img width="50px" src="/github-icon.png" /> Link to Github
+                <img width="50px" src="../resources/icons/github-icon.png" /> Link to Github
                 Account
               </li>
               <li class="list-group-item">
-                <img width="50px" src="/linkedin-icon.png" alt="" /> Linkedin
+                <img width="50px" src="../resources/icons/linkedin-icon.png" alt="" /> Linkedin
               </li>
             </ul>
           </div>
@@ -262,11 +245,11 @@
             <p class="card-text">React Developer at Sumocoders</p>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <img width="50px" src="/github-icon.png" /> Link to Github
+                <img width="50px" src="../resources/icons/github-icon.png" /> Link to Github
                 Account
               </li>
               <li class="list-group-item">
-                <img width="50px" src="/linkedin-icon.png" alt="" /> Linkedin
+                <img width="50px" src="../resources/icons/linkedin-icon.png" alt="" /> Linkedin
               </li>
             </ul>
           </div>

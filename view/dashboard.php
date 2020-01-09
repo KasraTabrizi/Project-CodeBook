@@ -15,48 +15,51 @@
 </head>
 
 <body>
-    <?php include('header.php'); ?>
-    <!--whole page container -->
-    <div class="container" style="margin-top:30px">
 
-        <!-- top row container -->
-        <div class="container">
+    <body>
+        <?php include('header.php'); ?>
+        <!--whole page container -->
+        <div class="container-fluid" style="margin-top:30px">
+
+            <!-- top row container -->
+            <!-- <div class="container"> -->
             <div class="row">
-                <div class="col-sm-12 row text-center m-auto">
+
+                <div class="col-xl-4 col-sm-12 col-md-8 text-center mt-5">
                     <!-- CARD -->
-                    <div class="col-xl-3 col-sm-6 mb-5">
-                        <div class="bg-white rounded shadow-sm py-5 px-4">
-                            <img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" alt="" />
-                            <h5 class="mb-0">Nathalie Pillen</h5>
-                            <span class="small text-uppercase text-muted">CEO - Founder</span>
-                            <ul class="social mb-0 list-inline mt-3">
-                                <li class="list-inline-item">
-                                    <a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                            </ul>
-                        </div>
+                    <!-- <div class="col-xl-6 col-sm-6 mb-5"> -->
+                    <div class="bg-white rounded shadow-sm py-5 px-4">
+                        <img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" alt="" />
+                        <h5 class="mb-0">Nathalie Pillen</h5>
+                        <span class="small text-uppercase text-muted">CEO - Founder</span>
+                        <ul class="social mb-0 list-inline mt-3">
+                            <li class="list-inline-item">
+                                <a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
                     </div>
-                    <!--end of team item-->
                 </div>
-            </div>
-            <!--end row text-center-->
+                <!--end of team item-->
+                <!-- </div> -->
+                <!-- </div> -->
+                <!--end row text-center-->
 
-            <hr class="d-sm-none">
-        </div>
+                <hr class="d-sm-none">
+                <!-- </div> -->
 
-        <!-- bottom row container -->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
+                <!-- bottom row container -->
+                <!-- <div class="container"> -->
+                <!-- <div class="row"> -->
+                <div class="col-xl-4 col-sm-12 col-md-8">
                     <h2>Projects</h2>
                     <!-- PROJECT LIST ITEM -->
                     <div class="container-fluid resultsContainer">
@@ -109,9 +112,8 @@
                     </div>
                     <!--end of container-->
 
-
                 </div>
-                <div class="col-sm-6">
+                <div class="col-xl-4 col-sm-12 col-md-8">
                     <h2>Collaborators</h2>
                     <div class="fakeimg">Fake Image</div>
                     <p>Some text..</p>
@@ -121,10 +123,10 @@
             <!-- end bottom row container -->
         </div>
         <!--end whole page container -->
-    </div>
+        </div>
 
-    <?php include('footer.php'); ?>
-    <?php include('bootstrap_scripts.php'); ?>
-</body>
+        <?php include('footer.php'); ?>
+        <?php include('bootstrap_scripts.php'); ?>
+    </body>
 
 </html>

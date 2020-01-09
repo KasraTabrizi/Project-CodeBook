@@ -71,6 +71,13 @@ function generateUsers()
         array_push($project_ids, getIdString($project_id_new));
     }
 }
+//function that generates random skills
+function generateSkills(){
+    $result = randomDocument($database, "Skills", "icon-image", "https");
+    foreach($result as $item){
+        var_dump($item);
+    }
+}
 //function which gets a random from the array
 function randomGen($array){
     $random = rand(0, count($array)-1);

@@ -15,9 +15,31 @@
         $collections = array("users" => "Users", "skills" => "Skills", "project" => "Projects");
         $usersKey = array("email", "password", "first_name", "last_name", "job_title", "github", "profile_image", "skills", "collaborators", "projects", "created_at");
         $skillsKey = array("skill", "icon-image");
-        $skillName = array("HTML","SVG", "CSS", "Sass","Bootstrap","Tailwind","Javascript","jQuery","Typescript","Vue.js","React.js","Angular","Three.js",
-                           "Svelte","Node.js","Express.js","OpenGL","PHP", "Laravel","Python","WebPack","Django","Flask","Ruby","MySQL","MongoDB","PostgreSQL");
-        $skillIconImage = array();
+        $skillName = array("HTML","CSS", "Sass","Bootstrap","Tailwind","Javascript","jQuery","Typescript","Vue.js","React.js","Angular"
+                           ,"Node.js","PHP", "Laravel","Python","WebPack","Django","Flask","Ruby","MySQL","MongoDB","PostgreSQL", "Drupal");
+        $skillIconImage = array("https://img.icons8.com/dusk/48/000000/html-5.png", 
+                                "https://img.icons8.com/color/48/000000/css3.png",
+                                "https://img.icons8.com/windows/48/000000/sass.png",
+                                "https://img.icons8.com/color/48/000000/bootstrap.png",
+                                "https://svg2raster.fileformat.info/vlz.jsp?svg=%2Flogos%2Ftailwindcss%2Ftailwindcss-icon.svg&width=48&height=48",
+                                "https://img.icons8.com/color/48/000000/javascript.png",
+                                "https://img.icons8.com/ios-filled/48/000000/jquery.png",
+                                "https://svg2raster.fileformat.info/vlz.jsp?svg=%2Flogos%2Ftypescriptlang%2Ftypescriptlang-icon.svg&width=48&height=48",
+                                "https://img.icons8.com/color/48/000000/vue-js.png",
+                                "https://img.icons8.com/nolan/48/react-native.png",
+                                "https://img.icons8.com/color/48/000000/angularjs.png",
+                                "https://img.icons8.com/color/48/000000/nodejs.png",
+                                "https://img.icons8.com/officexs/48/000000/php-logo.png",
+                                "https://img.icons8.com/ios-filled/48/000000/laravel.png",
+                                "https://img.icons8.com/wired/48/000000/python.png",
+                                "https://img.icons8.com/dusk/48/000000/webpack.png",
+                                "https://svg2raster.fileformat.info/vlz.jsp?svg=%2Flogos%2Fdjangoproject%2Fdjangoproject-icon.svg&width=48&height=48",
+                                "https://svg2raster.fileformat.info/vlz.jsp?svg=%2Flogos%2Fpocoo_flask%2Fpocoo_flask-icon.svg&width=48&height=48",
+                                "https://img.icons8.com/nolan/48/ruby-programming-language.png",
+                                "https://img.icons8.com/ios-filled/48/000000/mysql-logo.png",
+                                "https://img.icons8.com/color/48/000000/mongodb.png",
+                                "https://img.icons8.com/color/48/000000/postgreesql.png",
+                                "https://img.icons8.com/color/48/000000/drupal.png");
         $projectsKey = array("title", "description", "github", "skills", "number_of_collaborators", "collaborators");
 
         $users = array("email" => "test", "password" => "test", "first name" => "test", "last name" => "test", "Job Title" => "test","Profile Image" => "test");
@@ -88,6 +110,12 @@
         // $data = array("skill" => "Svelte");
         // $result = createOneDB($database, $collections['skills'], $data);
         // var_dump($result);
+
+        //CREATE ALL THE SKILL AND ICON IMAGE DOCUMENTS IN THE SKILLS COLLECTION
+        // for($i = 0; $i < count($skillName); $i++){
+        //     $data = array("skill" => $skillName[$i], "icon-image" => $skillIconImage[$i]);
+        //     $result = createOneDB($database, $collections['skills'], $data);
+        // }
 
         //TEST READ ONE DOCUMENT
         // $data = array("skill" => "PHP");

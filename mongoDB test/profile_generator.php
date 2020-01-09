@@ -26,7 +26,7 @@ function generateUsers()
     $user_ids = array();
     $project_ids = array();
 
-
+    //Connect to database
     $username = "KasraTabrizi";
     $password = "codebook";
     $database = connectDB($username, $password);
@@ -72,8 +72,7 @@ function generateUsers()
     }
 }
 //function which gets a random from the array
-function randomGen($array)
-{
+function randomGen($array){
     $random = rand(0, count($array)-1);
     $random = $array[$random];
     return $random;

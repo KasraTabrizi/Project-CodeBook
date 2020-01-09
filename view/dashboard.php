@@ -20,11 +20,12 @@
     <div class="container" style="margin-top:30px">
 
         <!-- top row container -->
-        <div class="container">
+        <!-- <div class="container"> -->
             <div class="row">
-                <div class="col-sm-12 row text-center m-auto">
+
+                <div class="col-xl-4 col-sm-12 col-md-8 text-center mt-5">
                     <!-- CARD -->
-                    <div class="col-xl-3 col-sm-6 mb-5">
+                    <!-- <div class="col-xl-6 col-sm-6 mb-5"> -->
                         <div class="bg-white rounded shadow-sm py-5 px-4">
                             <img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" alt="" />
                             <h5 class="mb-0">Nathalie Pillen</h5>
@@ -46,17 +47,17 @@
                         </div>
                     </div>
                     <!--end of team item-->
-                </div>
-            </div>
+                <!-- </div> -->
+            <!-- </div> -->
             <!--end row text-center-->
 
             <hr class="d-sm-none">
-        </div>
+        <!-- </div> -->
 
         <!-- bottom row container -->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
+        <!-- <div class="container"> -->
+            <!-- <div class="row"> -->
+                <div class="col-xl-4 col-sm-12 col-md-8">
                     <h2>Projects</h2>
                     <!-- PROJECT LIST ITEM -->
                     <div class="container-fluid resultsContainer">
@@ -111,7 +112,7 @@
 
 
                 </div>
-                <div class="col-sm-6">
+                <div class="col-xl-4 col-sm-12 col-md-8">
                     <h2>Collaborators</h2>
                     <div class="fakeimg">Fake Image</div>
                     <p>Some text..</p>

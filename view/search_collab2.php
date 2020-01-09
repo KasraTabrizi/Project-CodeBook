@@ -9,24 +9,14 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../styles/search_collab.css" />
-    <link
+    
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.12/css/bootstrap-select.min.css"
       integrity="sha256-l3FykDBm9+58ZcJJtzcFvWjBZNJO40HmvebhpHXEhC0="
       crossorigin="anonymous"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.12/js/bootstrap-select.min.js"
-      integrity="sha256-+o/X+QCcfTkES5MroTdNL5zrLNGb3i4dYdWPWuq6whY="
-      crossorigin="anonymous"
-    ></script>
+    /> -->
+    <link rel="stylesheet" href="../styles/search_collab.css" />
     <title>Document</title>
   </head>
   <body>
@@ -60,7 +50,7 @@
 
     <div class="container">
       <div class="row text-center">
-        <!-- TEAM ITEM -->
+        <!-- TEAM ITEM 1 -->
         <div class="col-xl-3 col-sm-6 mb-5">
           <div class="bg-white rounded shadow-sm py-5 px-4">
             <img
@@ -71,7 +61,9 @@
             />
             <h5 class="mb-0">Nathalie Pillen</h5>
             <span class="small text-uppercase text-muted">CEO - Founder</span>
-            <ul class="social mb-0 list-inline mt-3">
+            <!-- SOCIAL MEDIA LINKS -->
+            <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
+              <h6 class="border-bottom">SOCIAL</h6>
               <li class="list-inline-item">
                 <a href="#" class="social-link"
                   ><i class="fa fa-facebook-f"></i
@@ -79,7 +71,7 @@
               </li>
               <li class="list-inline-item">
                 <a href="#" class="social-link"
-                  ><i class="fa fa-twitter"></i
+                  ><i class="fa fa-github"></i
                 ></a>
               </li>
               <li class="list-inline-item">
@@ -93,132 +85,53 @@
                 ></a>
               </li>
             </ul>
-          </div>
-        </div>
-        <!--end of team item-->
 
-        <!-- TEAM ITEM -->
-        <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="bg-white rounded shadow-sm py-5 px-4">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg"
-              width="100"
-              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h5 class="mb-0">Kasra Tabrizi</h5>
-            <span class="small text-uppercase text-muted">CEO - Founder</span>
-            <ul class="social mb-0 list-inline mt-3">
+            <!-- SKILLS BADGES --> 
+
+            
+            <ul class="social mb-0 list-inline mt-2">
+              <h6 class="border-bottom">SKILLS</h6> 
               <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-facebook-f"></i
-                ></a>
+                <a href="#"
+                  ><img src="https://img.icons8.com/wired/48/000000/python.png" /></a>
               </li>
               <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-twitter"></i
-                ></a>
+                <a href="#"
+                  ><img src="https://img.icons8.com/dusk/48/000000/html-5.png" /></a>
               </li>
               <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-instagram"></i
-                ></a>
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/css3.png" /></a>
               </li>
               <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-linkedin"></i
-                ></a>
+                <a href="#"
+                  ><img src="https://img.icons8.com/windows/48/000000/sass.png" /></a>
               </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/angularjs.png" /></a>
+              </li>
+              
             </ul>
+           
           </div>
         </div>
-        <!--end of team item-->
+        <!--end of team item 1 -->
 
-        <!-- TEAM ITEM -->
+        <!-- TEAM ITEM 2 -->
         <div class="col-xl-3 col-sm-6 mb-5">
           <div class="bg-white rounded shadow-sm py-5 px-4">
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-2.jpg"
-              width="100"
-              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h5 class="mb-0">John Doe</h5>
-            <span class="small text-uppercase text-muted">CEO - Founder</span>
-            <ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-facebook-f"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-twitter"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-linkedin"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!--end of team item-->
-
-        <!-- TEAM ITEM -->
-        <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="bg-white rounded shadow-sm py-5 px-4">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
-              width="100"
-              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h5 class="mb-0">Denzel Washington</h5>
-            <span class="small text-uppercase text-muted">CEO - Founder</span>
-            <ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-facebook-f"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-twitter"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-linkedin"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!--end of team item-->
-        <!-- TEAM ITEM -->
-        <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="bg-white rounded shadow-sm py-5 px-4">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
               width="100"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               alt=""
             />
             <h5 class="mb-0">Nathalie Pillen</h5>
             <span class="small text-uppercase text-muted">CEO - Founder</span>
-            <ul class="social mb-0 list-inline mt-3">
+            <!-- SOCIAL MEDIA LINKS -->
+            <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
+              <h6 class="border-bottom shadow-sm">SOCIAL</h6>
               <li class="list-inline-item">
                 <a href="#" class="social-link"
                   ><i class="fa fa-facebook-f"></i
@@ -226,7 +139,7 @@
               </li>
               <li class="list-inline-item">
                 <a href="#" class="social-link"
-                  ><i class="fa fa-twitter"></i
+                  ><i class="fa fa-github"></i
                 ></a>
               </li>
               <li class="list-inline-item">
@@ -240,85 +153,40 @@
                 ></a>
               </li>
             </ul>
-          </div>
-        </div>
-        <!--end of team item-->
 
-        <!-- TEAM ITEM -->
-        <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="bg-white rounded shadow-sm py-5 px-4">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg"
-              width="100"
-              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h5 class="mb-0">Kasra Tabrizi</h5>
-            <span class="small text-uppercase text-muted">CEO - Founder</span>
-            <ul class="social mb-0 list-inline mt-3">
+            <!-- SKILLS BADGES --> 
+
+            
+            <ul class="social mb-0 list-inline mt-2 list-group-flush">
+              <h6 class="border-bottom">SKILLS</h6> 
               <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-facebook-f"></i
-                ></a>
+                <a href="#"
+                  ><img src="https://img.icons8.com/wired/48/000000/python.png" /></a>
               </li>
               <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-twitter"></i
-                ></a>
+                <a href="#"
+                  ><img src="https://img.icons8.com/dusk/48/000000/html-5.png" /></a>
               </li>
               <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-instagram"></i
-                ></a>
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/css3.png" /></a>
               </li>
               <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-linkedin"></i
-                ></a>
+                <a href="#"
+                  ><img src="https://img.icons8.com/windows/48/000000/sass.png" /></a>
               </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/angularjs.png" /></a>
+              </li>
+              
             </ul>
+           
           </div>
         </div>
-        <!--end of team item-->
+        <!--end of team item 2-->
 
-        <!-- TEAM ITEM -->
-        <div class="col-xl-3 col-sm-6 mb-5">
-          <div class="bg-white rounded shadow-sm py-5 px-4">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-2.jpg"
-              width="100"
-              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h5 class="mb-0">John Doe</h5>
-            <span class="small text-uppercase text-muted">CEO - Founder</span>
-            <ul class="social mb-0 list-inline mt-3">
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-facebook-f"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-twitter"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-linkedin"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!--end of team item-->
-
-        <!-- TEAM ITEM -->
+                <!-- TEAM ITEM 3 -->
         <div class="col-xl-3 col-sm-6 mb-5">
           <div class="bg-white rounded shadow-sm py-5 px-4">
             <img
@@ -327,9 +195,11 @@
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               alt=""
             />
-            <h5 class="mb-0">Denzel Washington</h5>
+            <h5 class="mb-0">Nathalie Pillen</h5>
             <span class="small text-uppercase text-muted">CEO - Founder</span>
-            <ul class="social mb-0 list-inline mt-3">
+            <!-- SOCIAL MEDIA LINKS -->
+            <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
+              <h6 class="border-bottom shadow-sm">SOCIAL</h6>
               <li class="list-inline-item">
                 <a href="#" class="social-link"
                   ><i class="fa fa-facebook-f"></i
@@ -337,7 +207,7 @@
               </li>
               <li class="list-inline-item">
                 <a href="#" class="social-link"
-                  ><i class="fa fa-twitter"></i
+                  ><i class="fa fa-github"></i
                 ></a>
               </li>
               <li class="list-inline-item">
@@ -351,9 +221,312 @@
                 ></a>
               </li>
             </ul>
+
+            <!-- SKILLS BADGES --> 
+
+            
+            <ul class="social mb-0 list-inline mt-2 list-group-flush">
+              <h6 class="border-bottom">SKILLS</h6> 
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/wired/48/000000/python.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/dusk/48/000000/html-5.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/css3.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/windows/48/000000/sass.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/angularjs.png" /></a>
+              </li>
+              
+            </ul>
+           
           </div>
         </div>
-        <!--end of team item-->
+        <!--end of team item 3-->
+
+       <!-- TEAM ITEM 3 -->
+        <div class="col-xl-3 col-sm-6 mb-5">
+          <div class="bg-white rounded shadow-sm py-5 px-4">
+            <img
+              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
+              width="100"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+              alt=""
+            />
+            <h5 class="mb-0">Nathalie Pillen</h5>
+            <span class="small text-uppercase text-muted">CEO - Founder</span>
+            <!-- SOCIAL MEDIA LINKS -->
+            <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
+              <h6 class="border-bottom shadow-sm">SOCIAL</h6>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+
+            <!-- SKILLS BADGES --> 
+
+            
+            <ul class="social mb-0 list-inline mt-2 list-group-flush">
+              <h6 class="border-bottom">SKILLS</h6> 
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/wired/48/000000/python.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/dusk/48/000000/html-5.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/css3.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/windows/48/000000/sass.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/angularjs.png" /></a>
+              </li>
+              
+            </ul>
+           
+          </div>
+        </div>
+        <!--end of team item 3-->
+
+        <!-- TEAM ITEM 3 -->
+        <div class="col-xl-3 col-sm-6 mb-5">
+          <div class="bg-white rounded shadow-sm py-5 px-4">
+            <img
+              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
+              width="100"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+              alt=""
+            />
+            <h5 class="mb-0">Nathalie Pillen</h5>
+            <span class="small text-uppercase text-muted">CEO - Founder</span>
+            <!-- SOCIAL MEDIA LINKS -->
+            <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
+              <h6 class="border-bottom shadow-sm">SOCIAL</h6>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+
+            <!-- SKILLS BADGES --> 
+
+            
+            <ul class="social mb-0 list-inline mt-2 list-group-flush">
+              <h6 class="border-bottom">SKILLS</h6> 
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/wired/48/000000/python.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/dusk/48/000000/html-5.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/css3.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/windows/48/000000/sass.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/angularjs.png" /></a>
+              </li>
+              
+            </ul>
+           
+          </div>
+        </div>
+        <!--end of team item 3-->
+
+        <!-- TEAM ITEM 3 -->
+        <div class="col-xl-3 col-sm-6 mb-5">
+          <div class="bg-white rounded shadow-sm py-5 px-4">
+            <img
+              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
+              width="100"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+              alt=""
+            />
+            <h5 class="mb-0">Nathalie Pillen</h5>
+            <span class="small text-uppercase text-muted">CEO - Founder</span>
+            <!-- SOCIAL MEDIA LINKS -->
+            <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
+              <h6 class="border-bottom shadow-sm">SOCIAL</h6>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+
+            <!-- SKILLS BADGES --> 
+
+            
+            <ul class="social mb-0 list-inline mt-2 list-group-flush">
+              <h6 class="border-bottom">SKILLS</h6> 
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/wired/48/000000/python.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/dusk/48/000000/html-5.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/css3.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/windows/48/000000/sass.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/angularjs.png" /></a>
+              </li>
+              
+            </ul>
+           
+          </div>
+        </div>
+        <!--end of team item 3-->
+
+        <!-- TEAM ITEM 3 -->
+        <div class="col-xl-3 col-sm-6 mb-5">
+          <div class="bg-white rounded shadow-sm py-5 px-4">
+            <img
+              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
+              width="100"
+              class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+              alt=""
+            />
+            <h5 class="mb-0">Nathalie Pillen</h5>
+            <span class="small text-uppercase text-muted">CEO - Founder</span>
+            <!-- SOCIAL MEDIA LINKS -->
+            <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
+              <h6 class="border-bottom shadow-sm">SOCIAL</h6>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+
+            <!-- SKILLS BADGES --> 
+
+            
+            <ul class="social mb-0 list-inline mt-2 list-group-flush">
+              <h6 class="border-bottom">SKILLS</h6> 
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/wired/48/000000/python.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/dusk/48/000000/html-5.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/css3.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/windows/48/000000/sass.png" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/angularjs.png" /></a>
+              </li>
+              
+            </ul>
+           
+          </div>
+        </div>
+        <!--end of team item 3-->
+
+        
       </div>
       <!--end row text-center-->
     </div>
@@ -361,11 +534,6 @@
 
     <?php include('footer.php'); ?>
     <?php include('bootstrap_scripts.php'); ?>
-    <script src="../dropdown.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"
-    ></script>
+    
   </body>
 </html>

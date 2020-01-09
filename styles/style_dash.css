@@ -1,0 +1,67 @@
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+}
+
+.resultsContainer {
+    background-color: rgb(228, 236, 225);
+    width: 40%;
+    margin: 0 auto;
+    /*font-size: 2rem;*/
+}
+
+.resultsChild {
+    background-color: rgb(212, 202, 202);
+    width: 99%;
+    margin: 2rem auto;
+}
+
+.resultsChild,
+.col {
+    border: 1px solid black;
+}
+
+.col-8 .row {
+    display: block;
+    margin: 0 auto;
+}
+
+.col-8 p {
+    /*font-size: 1.25rem;*/
+    background-color: #fff;
+    max-width: 100%;
+    margin: 0;
+    padding: 1rem;
+    border: 1px dotted black;
+}
+
+.col-4 {
+    margin: 0 auto;
+    /* width: 10%;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnGithub,
+.btnApply {
+    margin-bottom: 1.5rem;
+    /*font-size: 1.5rem;*/
+    font-weight: bold;
+}

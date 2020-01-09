@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="../styles/style_erin.css">
+    <link rel="stylesheet" href="../styles/style_index.css">
 
     <?php include('bootstrap_styles.php'); ?>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -31,6 +31,10 @@
                             necessitatibus.</p>
                         <!-- pop up with more info-->
                         <p><a href="#" class="nonOpaque btn btn-dark py-3 px-5 btn-pill" data-toggle="modal" data-target="#centralModalSm">Learn more!</a></p>
+
+                        <!-- DEVELOPMENT ONLY -->
+                        <p><a href="dashboard.php" class="nonOpaque btn btn-dark py-3 px-5 btn-pill">/DEV/ to dash</a></p>
+
                     </div>
 
                     <!-- Central Modal Small -->

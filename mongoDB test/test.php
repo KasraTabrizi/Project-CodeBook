@@ -113,7 +113,7 @@
         // var_dump($result);
 
         //DELETE MULTIPLE DOCUMENTS
-        // $data = array("email" => "test");
+        // $data = array("github" => "https://github.com");
         // $result = deleteManyDB($database, $collections['users'], $data);
         // var_dump($result);
     ?>

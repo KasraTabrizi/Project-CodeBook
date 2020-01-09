@@ -106,6 +106,9 @@
         //TEST CONNECTION TO DATABASE
         $database = connectDB($username, $password);
 
+        // $collection = $database->CodeBook->Skills;
+        // var_dump($collection->getIndex());
+
         //TEST INSERT
         // $data = array("skill" => "Svelte");
         // $result = createOneDB($database, $collections['skills'], $data);
@@ -118,9 +121,24 @@
         // }
 
         //TEST READ ONE DOCUMENT
-        // $data = array("skill" => "PHP");
+        // $data = array("skill" => "CSS");
+        // $collection = $database->CodeBook->Skills;
         // $result = readOneDB($database, $collections['skills'], $data);
-        // var_dump((string)$result['_id']);
+        // var_dump($result);
+
+        function randomDocument($database,$collectionName,$fieldName,$keyWord){
+            $data = array($fieldName => new MongoDB\BSON\Regex("^.$keyWord.", 'i'));
+            $collection = $database->CodeBook->$collectionName;
+            $result = $collection->find(
+                $data,
+                [
+                    'limit' => 1,
+                    'skip' => 1,
+                ]
+            );
+            var_dump($result);
+        }
+        
 
         //TEST READ EVERYTHING
         // $result = readCollection($database, $collections['users']);

@@ -13,7 +13,7 @@
         $username = "KasraTabrizi";
         $password = "codebook";
         $collections = array("users" => "Users", "skills" => "Skills", "project" => "Projects");
-        $usersKey = array("email", "password", "first_name", "last_name", "job_title", "github", "profile_image", "skills", "collaborators", "projects");
+        $usersKey = array("email", "password", "first_name", "last_name", "job_title", "github", "profile_image", "skills", "collaborators", "projects", "created_at");
         $skillsKey = array("skill", "icon-image");
         $skillName = array("HTML","SVG", "CSS", "Sass","Bootstrap","Tailwind","Javascript","jQuery","Typescript","Vue.js","React.js","Angular","Three.js",
                            "Svelte","Node.js","Express.js","OpenGL","PHP", "Laravel","Python","WebPack","Django","Flask","Ruby","MySQL","MongoDB","PostgreSQL");
@@ -74,6 +74,11 @@
         function collectionLength($database,$collectionName){
             $collection = $database->CodeBook->$collectionName;
             return $collection->count();
+        }
+
+        //GET ID STRING OF AN OBJECTID  
+        function getIdString($objectId){
+            return $objectId->jsonSerialize()['$oid'];
         }
 
         //TEST CONNECTION TO DATABASE

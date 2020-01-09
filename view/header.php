@@ -1,14 +1,36 @@
 <header class="container-fluid">
-  <div class="p-3 mb-2 bg-secondary">
-    
-    <nav class="navbar">
-      <a class="navbar-brand" href="#">
-        <img src="#" width="30" height="30" class="d-inline-block align-top" alt="">
-        KANE
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+      <!--Brand Logo-->
+      <a class="navbar-brand" href="#">CodeBook</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!--navbar-->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav justify-content-end">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">COLLABORATORS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">LOGOUT</a>
+          </li>
+        </ul>
+        
+  
+    </nav>
+
+
+    
+    <!--<nav class="navbar">
+      
 
       <ul class="nav justify-content-end">
         <li class="nav-item">
@@ -38,6 +60,6 @@
         <a class="btn btn-secondary" href="#" role="button">LOGOUT</a>
         </li> 
       </ul>
-    </nav>
+    </nav>-->
   </div>
 </header>

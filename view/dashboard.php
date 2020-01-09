@@ -17,7 +17,7 @@
 <body>
     <?php include('header.php'); ?>
     <!--whole page container -->
-    <div class="container" style="margin-top:30px">
+    <div class="container-fluid" style="margin-top:30px">
 
         <!-- top row container -->
         <!-- <div class="container"> -->

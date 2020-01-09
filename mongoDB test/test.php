@@ -103,6 +103,21 @@
             return $objectId->jsonSerialize()['$oid'];
         }
 
+        //GET A RANDON DOCUMENT FROM A COLLECTION
+        function randomDocument($database, $collectionName, $fieldName, $keyWord){
+            $data = array($fieldName => new MongoDB\BSON\Regex("^".$keyWord, 'i'));
+            $collection = $database->CodeBook->Skills;
+            $lenCollection = $collection->count();
+            $result = $collection->find(
+                $data,
+                [
+                    'limit' => 1,
+                    'skip' => rand(0, $lenCollection),
+                ]
+                );
+            return $result;
+        }
+
         //TEST CONNECTION TO DATABASE
         $database = connectDB($username, $password);
 
@@ -126,19 +141,11 @@
         // $result = readOneDB($database, $collections['skills'], $data);
         // var_dump($result);
 
-        function randomDocument($database,$collectionName,$fieldName,$keyWord){
-            $data = array($fieldName => new MongoDB\BSON\Regex("^.$keyWord.", 'i'));
-            $collection = $database->CodeBook->$collectionName;
-            $result = $collection->find(
-                $data,
-                [
-                    'limit' => 1,
-                    'skip' => 1,
-                ]
-            );
-            var_dump($result);
+        //TEST GET RANDOM DOCUMENT
+        $result = randomDocument($database, "Skills", "icon-image", "https");
+        foreach($result as $item){
+            var_dump($item);
         }
-        
 
         //TEST READ EVERYTHING
         // $result = readCollection($database, $collections['users']);

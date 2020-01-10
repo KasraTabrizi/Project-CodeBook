@@ -38,7 +38,7 @@ function addProject(){
 //---------------------------------------------------------------
 //GENERAL RELATED FUNCTIONS
 
-//SHOW LIST OF ALL PROJECT
+//SHOW LIST OF ALL PROJECTS
 function showAllProjects(){
 
 }

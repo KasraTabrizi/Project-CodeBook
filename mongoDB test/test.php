@@ -112,7 +112,7 @@
                 $data,
                 [
                     'limit' => 1,
-                    'skip' => rand(0, $lenCollection),
+                    'skip' => rand(0, $lenCollection - 1),
                 ]
                 );
             return $result;
@@ -142,10 +142,10 @@
         // var_dump($result);
 
         //TEST GET RANDOM DOCUMENT
-        $result = randomDocument($database, "Skills", "icon-image", "https");
-        foreach($result as $item){
-            var_dump($item);
-        }
+        // $result = randomDocument($database, "Skills", "icon-image", "https");
+        // foreach($result as $item){
+        //     var_dump(getIdString($item["_id"]));
+        // }
 
         //TEST READ EVERYTHING
         // $result = readCollection($database, $collections['users']);

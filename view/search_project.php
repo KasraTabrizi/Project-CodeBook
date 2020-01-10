@@ -259,7 +259,7 @@
           </div>
 
           <div class="row text-white">SKILLS</div>
-          <ul class="social mb-0 list-inline mt-2">
+          <ul class="social mb-1 list-inline mt-2">
             <!-- <h6 class="border-bottom">SKILLS</h6> -->
             <li class="list-inline-item">
               <a href="#"
@@ -337,7 +337,7 @@
           </div>
 
           <div class="row text-white">SKILLS</div>
-          <ul class="social mb-0 list-inline mt-2">
+          <ul class="social mb-1 list-inline mt-2">
             <!-- <h6 class="border-bottom">SKILLS</h6> -->
             <li class="list-inline-item">
               <a href="#"
@@ -415,7 +415,7 @@
           </div>
 
           <div class="row text-white">SKILLS</div>
-          <ul class="social mb-0 list-inline mt-2">
+          <ul class="social mb-1 list-inline mt-2">
             <!-- <h6 class="border-bottom">SKILLS</h6> -->
             <li class="list-inline-item">
               <a href="#"
@@ -493,7 +493,7 @@
           </div>
 
           <div class="row text-white">SKILLS</div>
-          <ul class="social mb-0 list-inline mt-2">
+          <ul class="social mb-1 list-inline mt-2">
             <!-- <h6 class="border-bottom">SKILLS</h6> -->
             <li class="list-inline-item">
               <a href="#"

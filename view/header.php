@@ -1,66 +1,59 @@
-<header class="container-fluid">
+<header>
 
-  <nav class="navbar navbar-expand-md navbar-dark static-top bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 
-    <!--Brand Logo-->
-    <a class="navbar-brand" href="index.php">CodeBook</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!--brand logo-->
+      <a class="navbar-brand" href="index.php">CodeBook</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!--navbar-->
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="nav justify-content-end">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">PROJECTS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">COLLABORATORS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">LOGOUT</a>
-        </li>
-      </ul>
+      <!--navigation-->
+      <!--Home-->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.php">Home</a>
+          </li>
 
+      <!--dropdown Projects-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="create_project.php">
+                <span>Create Project</span>
+              </a>
+              <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="search_project.php">
+                  <span>Search Project</span>
+                </a>
+            </div>
+          </li>
 
-  </nav>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Collaborators
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="search_collab2.php">
+                  <span>Search Collaborator</span>
+                </a>
+            </div>
+          </li>
 
-
-
-  <!--<nav class="navbar">
-      
-
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="btn btn-secondary" href="#" role="button">HOME</a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            PROJECTS
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Create Project</a>
-            <a class="dropdown-item" href="#">Search Project</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log out</a>
+          </li>
+              
+          </ul>
           </div>
-        </li>
+        </nav>
+        </ul>
 
-        <li class="nav-item dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            COLLABORATORS
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Search Collaborators</a>
-          </div>
-        </li>
 
-        <li class="nav-item">
-          <a class="btn btn-secondary" href="#" role="button">LOGOUT</a>
-        </li>
-      </ul>
-    </nav>-->
+    </nav>
   </div>
 </header>

@@ -12,6 +12,11 @@ function addCollaborator(){
 
 //FUNCTION THAT CREATES A NEW PROJECT
 function createProject(){
+
+}
+
+//FUNCTION THAT DELETES A PROJECT
+function deleteProject(){
     
 }
 

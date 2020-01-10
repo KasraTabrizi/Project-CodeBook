@@ -1,5 +1,7 @@
 <?php
 
+//USER RELATED FUNCTIONS
+
 //GENERATES A NEW USER WHEN REGISTERED
 function generateUser(){
 
@@ -15,6 +17,9 @@ function addCollaborator(){
 
 }
 
+//---------------------------------------------------------------
+//PROJECT RELATED FUNCTIONS
+
 //CREATES A NEW PROJECT
 function createProject(){
 
@@ -24,6 +29,9 @@ function createProject(){
 function deleteProject(){
 
 }
+
+//---------------------------------------------------------------
+//GENERAL RELATED FUNCTIONS
 
 //SHOW LIST OF ALL PROJECT
 function showAllProjects(){

@@ -28,50 +28,89 @@
   </head>
   <body>
     <!--HEADER/NAVBAR-->
-    <?php include('header.php'); ?>
+    <!-- <?php include('header.php'); ?> -->
     <!--FILTER CONTAINER-->
 
-    <div class="container-fluid filterContainer">
-      <div class="filterHeader filterChild">FILTER:</div>
-      <div class="dropdown filterChild">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          SKILLS
-        </button>
-        <div class="dropdown-menu filterChild">
-          <a href="#" class="dropdown-item">JavaScript</a>
-          <a href="#" class="dropdown-item">PHP</a>
-          <a href="#" class="dropdown-item">React</a>
-          <a href="#" class="dropdown-item">SQL</a>
-          <a href="#" class="dropdown-item">Node.js</a>
-        </div>
-      </div>
-      <div class="dropdown filterChild">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          COLLABORATORS
-        </button>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item">1-5 collaborators</a>
-          <a href="#" class="dropdown-item">5-10 collaborators</a>
-          <a href="#" class="dropdown-item">10-20 collaborators</a>
-          <a href="#" class="dropdown-item">20-50 collaborators</a>
-          <a href="#" class="dropdown-item">>50 collaborators</a>
-        </div>
-      </div>
+    <!--FILTER SEARCH BAR CONTAINER-->
 
-      <button class="btn btn-primary filterChild">SEARCH</button>
-    </div>
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+
+  <!--brand logo-->
+  <a class="navbar-brand" href="#">Filter by: </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!--navigation-->
+  <!--SKILLS-->
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    
+    <ul class="navbar-nav mr-auto">
+      
+
+  <!--dropdown SKILLS 1-->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Skills
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">
+            <span>JavaScript</span>
+          </a>
+          <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span>PHP</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span>React</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span>HTML5</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span>CSS3</span>
+            </a>
+        </div>
+      </li>
+      <!--dropdown SKILLS 2-->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Collaborators
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">
+            <span>1-5</span>
+          </a>
+          <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span>5-10</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span>10-25</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span>25-50</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <span>> 50</span>
+            </a>
+        </div>
+      </li>
+      <!-- SEARCH BUTTON -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" type="button" role="button"> 
+        Search
+        </a>
+      </li> 
+      </ul>
+      </div>
+    </nav>
 
     <!--SEARCH RESULTS CONTAINER-->
 

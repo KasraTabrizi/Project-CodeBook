@@ -13,11 +13,12 @@
     <title>SEARCH FOR COLLABORATORS</title>
   </head>
   <body>
-    <!--HEADER/NAVBAR-->
-    <!-- <?php include('header.php'); ?> -->
-    <!--FILTER CONTAINER-->
 
- <header>
+    <!--HEADER/NAVBAR-->
+
+    <?php include('header.php'); ?>
+
+    <!--FILTER SEARCH BAR CONTAINER-->
 
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
 
@@ -34,7 +35,7 @@
     <ul class="navbar-nav mr-auto">
       
 
-  <!--dropdown Projects-->
+  <!--dropdown SKILLS-->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               SKILLS
@@ -61,25 +62,15 @@
             </a>
         </div>
       </li>
-
+      <!-- SEARCH BUTTON -->
       <li class="nav-item dropdown">
         <a class="nav-link" type="button" role="button"> 
         Search
         </a>
-      </li>
-          
+      </li> 
       </ul>
-
-        
       </div>
     </nav>
-    
-
-
-</nav>
-</div>
-</header>
-
 
     <!--TEAM ITEMS CONTAINER-->
 

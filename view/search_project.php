@@ -29,7 +29,6 @@
   <body>
     <!--HEADER/NAVBAR-->
     <!-- <?php include('header.php'); ?> -->
-    <!--FILTER CONTAINER-->
 
     <!--FILTER SEARCH BAR CONTAINER-->
 
@@ -131,6 +130,35 @@
           </div>
           <div class="row">COLLABORATORS</div>
           <div class="row">SKILLS</div>
+          <ul class="social mb-0 list-inline mt-2">
+              <!-- <h6 class="border-bottom">SKILLS</h6> -->
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/wired/48/000000/python.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/dusk/48/000000/html-5.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/css3.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/windows/48/000000/sass.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/color/48/000000/angularjs.png"
+                /></a>
+              </li>
+            </ul>
         </div>
         <div class="col col-4">
           <button class="btn btn-primary btnGithub">GITHUB</button>
@@ -151,6 +179,35 @@
           </div>
           <div class="row">COLLABORATORS</div>
           <div class="row">SKILLS</div>
+          <ul class="social mb-0 list-inline mt-2">
+              <!-- <h6 class="border-bottom">SKILLS</h6> -->
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/wired/48/000000/python.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/dusk/48/000000/html-5.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/css3.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/windows/48/000000/sass.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/color/48/000000/angularjs.png"
+                /></a>
+              </li>
+            </ul>
         </div>
         <div class="col col-4">
           <button class="btn btn-primary btnGithub">GITHUB</button>
@@ -170,6 +227,35 @@
           </div>
           <div class="row">COLLABORATORS</div>
           <div class="row">SKILLS</div>
+          <ul class="social mb-0 list-inline mt-2">
+              <!-- <h6 class="border-bottom">SKILLS</h6> -->
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/wired/48/000000/python.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/dusk/48/000000/html-5.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/css3.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/windows/48/000000/sass.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/color/48/000000/angularjs.png"
+                /></a>
+              </li>
+            </ul>
         </div>
         <div class="col col-4">
           <button class="btn btn-primary btnGithub">GITHUB</button>

@@ -1,5 +1,7 @@
 /*CSS for filter dropdown buttons*/
-
+* {
+  font-size: 1rem;
+}
 .filterContainer {
   background-color: rgb(240, 229, 229);
   display: flex;
@@ -11,9 +13,7 @@
 }
 .filterChild {
   margin: 1rem;
-  
 }
-
 
 /* HOVER COLOR CHANGE NOT WORKING
 .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus{
@@ -23,10 +23,11 @@
 /*CSS FOR SEARCH RESULTS*/
 
 .resultsContainer {
+  font-size: 1rem;
   background-color: rgb(228, 236, 225);
   width: 100vw;
   margin: 0 auto;
-  
+}
 .resultsChild {
   background-color: rgb(212, 202, 202);
   width: 80vw;
@@ -42,7 +43,6 @@
   margin: 0 auto;
 }
 .col-8 p {
-  
   background-color: #fff;
   width: 75%;
   max-width: 500px;
@@ -62,6 +62,6 @@
 .btnGithub,
 .btnApply {
   margin-bottom: 1.5rem;
-  
+
   font-weight: bold;
 }

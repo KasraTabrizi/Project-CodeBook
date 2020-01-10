@@ -149,7 +149,6 @@
           </div>
           <div class="row text-white">COLLABORATORS</div>
           <div class="list-inline-item mr-auto rounded">
-            
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
               width="50"
@@ -159,7 +158,6 @@
             <h6 class="mb-0">Nathalie P.</h6>
           </div>
           <div class="list-inline-item mr-auto rounded">
-            
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
               width="50"
@@ -169,7 +167,6 @@
             <h6 class="mb-0">Kasra T.</h6>
           </div>
           <div class="list-inline-item mr-auto rounded">
-            
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg"
               width="50"
@@ -228,7 +225,6 @@
           </div>
           <div class="row text-white">COLLABORATORS</div>
           <div class="list-inline-item mr-auto rounded">
-            
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
               width="50"
@@ -238,7 +234,6 @@
             <h6 class="mb-0">Nathalie P.</h6>
           </div>
           <div class="list-inline-item mr-auto rounded">
-            
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
               width="50"
@@ -248,7 +243,6 @@
             <h6 class="mb-0">Kasra T.</h6>
           </div>
           <div class="list-inline-item mr-auto rounded">
-            
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg"
               width="50"
@@ -306,7 +300,6 @@
           </div>
           <div class="row text-white">COLLABORATORS</div>
           <div class="list-inline-item mr-auto rounded">
-            
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
               width="50"
@@ -316,7 +309,6 @@
             <h6 class="mb-0">Nathalie P.</h6>
           </div>
           <div class="list-inline-item mr-auto rounded">
-            
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
               width="50"
@@ -326,7 +318,6 @@
             <h6 class="mb-0">Kasra T.</h6>
           </div>
           <div class="list-inline-item mr-auto rounded">
-            
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg"
               width="50"
@@ -384,7 +375,6 @@
           </div>
           <div class="row text-white">COLLABORATORS</div>
           <div class="list-inline-item mr-auto rounded">
-            
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
               width="50"
@@ -394,7 +384,6 @@
             <h6 class="mb-0">Nathalie P.</h6>
           </div>
           <div class="list-inline-item mr-auto rounded">
-            
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
               width="50"
@@ -404,7 +393,6 @@
             <h6 class="mb-0">Kasra T.</h6>
           </div>
           <div class="list-inline-item mr-auto rounded">
-            
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg"
               width="50"
@@ -462,7 +450,6 @@
           </div>
           <div class="row text-white">COLLABORATORS</div>
           <div class="list-inline-item mr-auto rounded">
-            
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
               width="50"
@@ -472,7 +459,6 @@
             <h6 class="mb-0">Nathalie P.</h6>
           </div>
           <div class="list-inline-item mr-auto rounded">
-            
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
               width="50"
@@ -482,7 +468,6 @@
             <h6 class="mb-0">Kasra T.</h6>
           </div>
           <div class="list-inline-item mr-auto rounded">
-            
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg"
               width="50"

@@ -30,6 +30,11 @@ function deleteProject(){
 
 }
 
+//ADD A PROJECT
+function addProject(){
+
+}
+
 //---------------------------------------------------------------
 //GENERAL RELATED FUNCTIONS
 

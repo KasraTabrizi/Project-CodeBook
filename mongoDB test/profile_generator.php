@@ -87,7 +87,6 @@ function generateUsers()
         array_push($project_ids, getIdString($project_id_new));
     }
 
-    echo "DONE";
     //asign 2 random projects to users
 
     //asign random collaborators as friends for users
@@ -96,6 +95,7 @@ function generateUsers()
 
     //asign random collaborators to users according to the number of collaborators
 
+    echo "DONE";
 }
 //function that generates random skills
 function generateSkills($database){

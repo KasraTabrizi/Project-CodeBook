@@ -12,8 +12,13 @@ function deleteUser(){
     
 }
 
-//ADDS A NEW USER AS FRIEND
+//ADDS A COLLABORATOR
 function addCollaborator(){
+
+}
+
+//DELETES A COLLABORATOR
+function deleteCollaborator(){
 
 }
 

@@ -36,7 +36,7 @@ function addProject(){
 }
 
 //---------------------------------------------------------------
-//GENERAL RELATED FUNCTIONS
+//FILTER RELATED FUNCTIONS
 
 //SHOW LIST OF ALL PROJECTS
 function showAllProjects(){

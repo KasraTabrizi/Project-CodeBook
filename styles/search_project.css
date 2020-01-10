@@ -1,6 +1,6 @@
 /*CSS for filter dropdown buttons*/
 * {
-  font-size: 1rem;
+  font-size: 16px;
 }
 .filterContainer {
   background-color: rgb(240, 229, 229);
@@ -33,16 +33,12 @@
   width: 80vw;
   margin: 2rem auto;
 }
-.resultsChild,
-.col {
-  border: 1px solid black;
-}
 
 .col-8 .row {
   display: block;
   margin: 0 auto;
 }
-.col-8 p {
+p .desc {
   background-color: #fff;
   width: 75%;
   max-width: 500px;
@@ -58,10 +54,18 @@
   align-items: center;
   justify-content: center;
 }
-
+.col {
+  border: 1px solid black;
+}
+.collab {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
 .btnGithub,
 .btnApply {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 
   font-weight: bold;
 }

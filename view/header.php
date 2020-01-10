@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 
       <!--brand logo-->
-      <a class="navbar-brand" href="#">CodeBook</a>
+      <a class="navbar-brand" href="index.php">CodeBook</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -14,7 +14,7 @@
         
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="index.php">Home</a>
           </li>
 
       <!--dropdown Projects-->
@@ -23,11 +23,11 @@
                   Projects
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="create_project.php">
                 <span>Create Project</span>
               </a>
               <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="search_project.php">
                   <span>Search Project</span>
                 </a>
             </div>
@@ -38,7 +38,7 @@
                   Collaborators
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="search_collab2.php">
                   <span>Search Collaborator</span>
                 </a>
             </div>

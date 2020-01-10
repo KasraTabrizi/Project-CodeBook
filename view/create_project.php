@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CodeBook</title>
-    <link rel="stylesheet" href="../styles/style_index.css">
-    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="../styles/dropdownCheckboxes.min.css">
     <?php include('bootstrap_styles.php'); ?>
 </head>
 
@@ -14,10 +14,9 @@
 <?php include('header.php'); ?>
 
    
-<form class="container text-white align-items-center">
-    
-    <div class="row form-group"></div>
-    <div class="row form-group"></div>
+<form class="container text-secondary align-items-center">
+
+<br>
     <!--titel-->
     <div class="row">
         <div class="col-md-2 col-sm-1"></div>
@@ -28,7 +27,7 @@
     </div>
 
     <!--ProjectName - CollabName-->
-    <div class="row form-group">
+    <div class="row">
         <div class="col-md-2 col-sm-1"></div>
         <div class="col-md-4">
             <label>Name Project</label>
@@ -47,7 +46,7 @@
     </div>        
 
     <!--Description-->
-    <div class="row form-group">
+    <div class="row">
         <div class="col-md-2 col-sm-1"></div>
         <div class="col-md-8">
             <label>Description</label>
@@ -57,21 +56,11 @@
         </div>
         <div class="col-md-2 col-sm-1"></div>        
     </div>
-    <!--Skills-->
-    <div class="row">
-        <div class="col-md-2 col-sm-1"></div>
-        <div class="form-group col-md-4">
-            <select class="custom-select" multiple>            
-                <option selected>Select Skill</option>
-                <option value="1">JavaScript</option>
-                <option value="2">Node.js</option>
-                <option value="3">PHP</option>
-                <option value="4">React</option>
-                <option value="5">SQL</option>
-            </select>
-        </div>
+
     <!--Github-->
-        <div class="form-group col-md-4">
+    <div class="row form-group">
+        <div class="col-md-2 col-sm-1"></div>
+    <div class="form-group col-md-8">
             <label>Github</label>
             <div>
             <input type="url" class="form-control" name="url">
@@ -79,20 +68,81 @@
         </div>
         <div class="col-md-2 col-sm-1"></div>
     </div>
-    <div class="row form-group"></div>
-    <div class="row form-group"></div>
-    <!--Create btn-->
-    <div class="form-group row">
+
+    <!-- THE GODDAMN SKILL DROPDOWN -->
+    <div class="row">
         <div class="col-md-2 col-sm-1"></div>
-        <div class="col-md-8 text-center">
-            <a href="" class="btn btn-default btn-primary btn-pill ">Create</a>
+        <div class="col-md-8 md-form form-sm mb-5">
+            <form class='myform'>
+
+                <div class="dropdown cq-dropdown" data-name='statuses'>
+                    <button class="btn btn-info btn-md dropdown-toggle" type="button" id="btndropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Your Expertise
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btndropdown">
+                        <li>
+                            <label class="radio-btn">
+                                <input type="checkbox" value='jQuery' checked>
+                                jQuery
+                            </label>
+                        </li>
+                        <li>
+                            <label class="radio-btn">
+                                <input type="checkbox" value='Bootstrap'>
+                                Bootstrap
+                            </label>
+                        </li>
+                        <li>
+                            <label class="radio-btn">
+                                <input type="checkbox" value='HTML'>
+                                HTML
+                            </label>
+                        </li>
+                        <li>
+                            <label class="radio-btn">
+                                <input type="checkbox" value='JavaScript' checked>
+                                JavaScript
+                            </label>
+                        </li>
+                        <li>
+                            <label class="radio-btn">
+                                <input type="checkbox" value='CSS' checked>
+                                CSS
+                            </label>
+                        </li>
+                        <li class='text-center'>
+                            <button type='button' class='btn btn-xs btn-danger clear close-dropdown' value='Clear'>Clear</button>
+                            <button type='button' class='btn btn-xs btn-success save' value='Save'>Save</button>
+                        </li>
+                    </ul>
+                </div>
+                <BR>
+            </form>
         </div>
         <div class="col-md-2 col-sm-1"></div>
     </div>
-    <div class="row form-group"></div>
+   
+    <!--Create btn-->
+    
+        <div class="d-flex justify-content-center">
+            <a href="" class="btn btn-lg btn-info btn-pill ">Create</a>
+        </div>  
 </form>
+<br>
+<br>
+<br>
 
 <?php include('footer.php'); ?>
 <?php include('bootstrap_scripts.php'); ?>
+<!--DROPDOWN MULTISELECT -->
+<script>
+        $(function() {
+            $('.cq-dropdown').dropdownCheckboxes();
+        });
+    </script>
+    <script src="../resources/bootstrap_js/dropdownCheckboxes.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

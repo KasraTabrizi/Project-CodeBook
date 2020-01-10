@@ -89,6 +89,11 @@
             />
             <h5 class="mb-0">Nathalie Pillen</h5>
             <span class="small text-uppercase text-muted">CEO - Founder </span>
+            <div class="">
+                
+                  <a href="#" class="badge badge-info m-auto">Add Friend</a>
+                
+</div>
             <!-- SOCIAL MEDIA LINKS -->
             <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
               <!-- <h6 class="border-bottom">SOCIAL</h6> -->
@@ -110,17 +115,13 @@
                   ><i class="fa fa-linkedin"></i
                 ></a>
               </li>
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-user-plus"></i
-                ></a>
-              </li>
+              
 
-              <li class="list-inline-item">
+              <!-- <li class="list-inline-item">
                 
                   <a href="#" class="badge badge-info m-auto">Add Friend</a>
                 
-              </li>
+              </li> -->
             </ul>
 
             <!-- SKILLS BADGES -->
@@ -137,11 +138,7 @@
                   ><img src="https://img.icons8.com/dusk/48/000000/html-5.png"
                 /></a>
               </li>
-              <li class="list-inline-item">
-                <a href="#"
-                  ><img src="https://img.icons8.com/color/48/000000/css3.png"
-                /></a>
-              </li>
+              
               <li class="list-inline-item">
                 <a href="#"
                   ><img src="https://img.icons8.com/windows/48/000000/sass.png"
@@ -169,6 +166,11 @@
             />
             <h5 class="mb-0">Denzel Washington</h5>
             <span class="small text-uppercase text-muted">CEO - Founder</span>
+            <div class="">
+                
+                  <a href="#" class="badge badge-info m-auto">Add Friend</a>
+                
+</div>
             <!-- SOCIAL MEDIA LINKS -->
             <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
               <!-- <h6 class="border-bottom shadow-sm">SOCIAL</h6> -->
@@ -190,11 +192,7 @@
                   ><i class="fa fa-linkedin"></i
                 ></a>
               </li>
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-user-plus"></i
-                ></a>
-              </li>
+              
             </ul>
 
             <!-- SKILLS BADGES -->
@@ -243,8 +241,14 @@
             />
             <h5 class="mb-0">Michael Spielberg</h5>
             <span class="small text-uppercase text-muted">CEO - Founder</span>
+            <div class="">
+                
+                  <a href="#" class="badge badge-info m-auto">Add Friend</a>
+                
+</div>
             <!-- SOCIAL MEDIA LINKS -->
             <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
+              
               <!-- <h6 class="border-bottom shadow-sm">SOCIAL</h6> -->
               <li class="list-inline-item">
                 <a href="#" class="social-link"
@@ -264,11 +268,7 @@
                   ><i class="fa fa-linkedin"></i
                 ></a>
               </li>
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-user-plus"></i
-                ></a>
-              </li>
+              
             </ul>
 
             <!-- SKILLS BADGES -->
@@ -317,6 +317,11 @@
             />
             <h5 class="mb-0">Brandon Something</h5>
             <span class="small text-uppercase text-muted">CEO - Founder</span>
+            <div class="">
+                
+                  <a href="#" class="badge badge-info m-auto">Add Friend</a>
+                
+</div>
             <!-- SOCIAL MEDIA LINKS -->
             <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
               <!-- <h6 class="border-bottom shadow-sm">SOCIAL</h6> -->
@@ -338,22 +343,14 @@
                   ><i class="fa fa-linkedin"></i
                 ></a>
               </li>
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-user-plus"></i
-                ></a>
-              </li>
+              
             </ul>
 
             <!-- SKILLS BADGES -->
 
             <ul class="social mb-0 list-inline mt-2 list-group-flush">
               <h6 class="border-bottom">SKILLS</h6>
-              <li class="list-inline-item">
-                <a href="#"
-                  ><img src="https://img.icons8.com/wired/48/000000/python.png"
-                /></a>
-              </li>
+              
               <li class="list-inline-item">
                 <a href="#"
                   ><img src="https://img.icons8.com/dusk/48/000000/html-5.png"
@@ -391,6 +388,11 @@
             />
             <h5 class="mb-0">Idris Elba</h5>
             <span class="small text-uppercase text-muted">CEO - Founder</span>
+            <div class="">
+                
+                  <a href="#" class="badge badge-info m-auto">Add Friend</a>
+                
+</div>
             <!-- SOCIAL MEDIA LINKS -->
             <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
               <!-- <h6 class="border-bottom shadow-sm">SOCIAL</h6> -->
@@ -412,11 +414,7 @@
                   ><i class="fa fa-linkedin"></i
                 ></a>
               </li>
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-user-plus"></i
-                ></a>
-              </li>
+              
             </ul>
 
             <!-- SKILLS BADGES -->
@@ -428,11 +426,7 @@
                   ><img src="https://img.icons8.com/wired/48/000000/python.png"
                 /></a>
               </li>
-              <li class="list-inline-item">
-                <a href="#"
-                  ><img src="https://img.icons8.com/dusk/48/000000/html-5.png"
-                /></a>
-              </li>
+              
               <li class="list-inline-item">
                 <a href="#"
                   ><img src="https://img.icons8.com/color/48/000000/css3.png"
@@ -465,6 +459,11 @@
             />
             <h5 class="mb-0">Erin Joosen</h5>
             <span class="small text-uppercase text-muted">CEO - Founder</span>
+            <div class="">
+                
+                  <a href="#" class="badge badge-info m-auto">Add Friend</a>
+                
+</div>
             <!-- SOCIAL MEDIA LINKS -->
             <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
               <!-- <h6 class="border-bottom shadow-sm">SOCIAL</h6> -->
@@ -486,11 +485,7 @@
                   ><i class="fa fa-linkedin"></i
                 ></a>
               </li>
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-user-plus"></i
-                ></a>
-              </li>
+              
             </ul>
 
             <!-- SKILLS BADGES -->
@@ -539,6 +534,11 @@
             />
             <h5 class="mb-0">Beard Guy</h5>
             <span class="small text-uppercase text-muted">CEO - Founder</span>
+            <div class="">
+                
+                  <a href="#" class="badge badge-info m-auto">Add Friend</a>
+                
+</div>
             <!-- SOCIAL MEDIA LINKS -->
             <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
               <!-- <h6 class="border-bottom shadow-sm">SOCIAL</h6> -->
@@ -560,11 +560,7 @@
                   ><i class="fa fa-linkedin"></i
                 ></a>
               </li>
-              <li class="list-inline-item">
-                <a href="#" class="social-link"
-                  ><i class="fa fa-user-plus"></i
-                ></a>
-              </li>
+              
             </ul>
 
             <!-- SKILLS BADGES -->

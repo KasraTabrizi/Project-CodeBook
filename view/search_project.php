@@ -258,7 +258,7 @@
             <h6 class="mb-0">Aline L.</h6>
           </div>
 
-          <div class="row">SKILLS</div>
+          <div class="row text-white">SKILLS</div>
           <ul class="social mb-0 list-inline mt-2">
             <!-- <h6 class="border-bottom">SKILLS</h6> -->
             <li class="list-inline-item">
@@ -336,7 +336,7 @@
             <h6 class="mb-0">Aline L.</h6>
           </div>
 
-          <div class="row">SKILLS</div>
+          <div class="row text-white">SKILLS</div>
           <ul class="social mb-0 list-inline mt-2">
             <!-- <h6 class="border-bottom">SKILLS</h6> -->
             <li class="list-inline-item">
@@ -414,7 +414,7 @@
             <h6 class="mb-0">Aline L.</h6>
           </div>
 
-          <div class="row">SKILLS</div>
+          <div class="row text-white">SKILLS</div>
           <ul class="social mb-0 list-inline mt-2">
             <!-- <h6 class="border-bottom">SKILLS</h6> -->
             <li class="list-inline-item">
@@ -492,7 +492,7 @@
             <h6 class="mb-0">Aline L.</h6>
           </div>
 
-          <div class="row">SKILLS</div>
+          <div class="row text-white">SKILLS</div>
           <ul class="social mb-0 list-inline mt-2">
             <!-- <h6 class="border-bottom">SKILLS</h6> -->
             <li class="list-inline-item">

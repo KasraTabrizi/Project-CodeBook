@@ -55,6 +55,7 @@ function generateUsers()
         $data_users['skills'] = $users_skills;
         $data_users['collaborators'] = array();
         $data_users['projects'] = array();
+        $data_users['friends_request'] = array();
         $data_users['created_at'] = $created_at;
         //Add to Database
         $user_id_new = createOneDB($database, "Users", $data_users);
@@ -64,10 +65,7 @@ function generateUsers()
 
     //generate projects
     for($i = 0; $i < 10; $i++){
-        $ptitle = randomGen($project_title);
-        $numcoll = randomGen($num_collabs);
-
-        $data_projects['title'] = $ptitle;
+        $data_projects['title'] = randomGen($project_title);
         $data_projects['description'] = $project_description;
         $data_projects['github'] = $github;
         //generate skills
@@ -78,10 +76,11 @@ function generateUsers()
             }
         }
         $data_projects['skills'] = $project_skills;
-        $data_projects['number_of_collaborators'] = $numcoll;
+        $data_projects['number_of_collaborators'] = randomGen($num_collabs);
         $data_projects['collaborators'] = array();
 
         $project_id_new = createOneDB($database, "Projects", $data_projects);
+        //add the project id to an array for later use in projects
         array_push($project_ids, getIdString($project_id_new));
     }
 

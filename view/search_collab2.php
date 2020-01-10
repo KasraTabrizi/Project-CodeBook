@@ -130,7 +130,7 @@
               <h6 class="border-bottom">SKILLS</h6>
               <li class="list-inline-item">
                 <a href="#"
-                  ><img src="https://img.icons8.com/wired/48/000000/python.png"
+                  ><img src="https://svg2raster.fileformat.info/vlz.jsp?svg=%2Flogos%2Fdjangoproject%2Fdjangoproject-icon.svg&width=48&height=48"
                 /></a>
               </li>
               <li class="list-inline-item">
@@ -201,7 +201,7 @@
               <h6 class="border-bottom">SKILLS</h6>
               <li class="list-inline-item">
                 <a href="#"
-                  ><img src="https://img.icons8.com/wired/48/000000/python.png"
+                  ><img src="https://img.icons8.com/color/48/000000/mongodb.png"
                 /></a>
               </li>
               <li class="list-inline-item">
@@ -277,7 +277,7 @@
               <h6 class="border-bottom">SKILLS</h6>
               <li class="list-inline-item">
                 <a href="#"
-                  ><img src="https://img.icons8.com/wired/48/000000/python.png"
+                  ><img src="https://img.icons8.com/ios-filled/48/000000/mysql-logo.png"
                 /></a>
               </li>
               <li class="list-inline-item">
@@ -363,7 +363,7 @@
               </li>
               <li class="list-inline-item">
                 <a href="#"
-                  ><img src="https://img.icons8.com/windows/48/000000/sass.png"
+                  ><img src="https://img.icons8.com/wired/48/000000/webpack.png"
                 /></a>
               </li>
               <li class="list-inline-item">
@@ -423,13 +423,13 @@
               <h6 class="border-bottom">SKILLS</h6>
               <li class="list-inline-item">
                 <a href="#"
-                  ><img src="https://img.icons8.com/wired/48/000000/python.png"
+                  ><img src="https://img.icons8.com/ios-filled/48/000000/laravel.png"
                 /></a>
               </li>
               
               <li class="list-inline-item">
                 <a href="#"
-                  ><img src="https://img.icons8.com/color/48/000000/css3.png"
+                  ><img src="https://img.icons8.com/officexs/48/000000/php-logo.png"
                 /></a>
               </li>
               <li class="list-inline-item">
@@ -499,7 +499,7 @@
               </li>
               <li class="list-inline-item">
                 <a href="#"
-                  ><img src="https://img.icons8.com/dusk/48/000000/html-5.png"
+                  ><img src="https://img.icons8.com/color/48/000000/vue-js.png"
                 /></a>
               </li>
               <li class="list-inline-item">
@@ -509,7 +509,7 @@
               </li>
               <li class="list-inline-item">
                 <a href="#"
-                  ><img src="https://img.icons8.com/windows/48/000000/sass.png"
+                  ><img src="https://img.icons8.com/windows/48/000000/nodejs.png"
                 /></a>
               </li>
               <li class="list-inline-item">
@@ -569,7 +569,7 @@
               <h6 class="border-bottom">SKILLS</h6>
               <li class="list-inline-item">
                 <a href="#"
-                  ><img src="https://img.icons8.com/wired/48/000000/python.png"
+                  ><img src="https://img.icons8.com/wired/48/000000/javascript.png"
                 /></a>
               </li>
               <li class="list-inline-item">

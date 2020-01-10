@@ -16,7 +16,6 @@
 
 <body>
     <?php include('header.php'); ?>
-
     <!-- WHOLE PAGE CONTAINER -->
     <div class="container-fluid" style="margin-top:30px">
         <div class="row">
@@ -135,7 +134,6 @@
                         </div>
                     </div>
                     <!-- END OF COLLABORATOR LIST ITEM -->
-
                     <!-- COLLABORATOR LIST ITEM -->
                     <div class="col-xl-4 col-sm-12 col-md-8 text-center mt-5">
                         <div class="bg-white rounded shadow-sm py-5 px-4">

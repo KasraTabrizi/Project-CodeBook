@@ -1,22 +1,6 @@
 /*CSS for filter dropdown buttons*/
 
-.filterContainer {
-  background-color: rgb(240, 229, 229);
-  display: flex;
-  justify-content: flex-start;
-}
-.filterHeader {
-  font-weight: bold;
-  position: relative;
-}
-.filterChild {
-  margin: 1rem;
-  font-size: 2rem;
-}
-.filterChild button,
-.dropdown-item {
-  font-size: 2rem;
-}
+/*TEAM ITEMS*/
 body {
   background: #e8cbc0;
   background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
@@ -43,4 +27,3 @@ body {
   text-decoration: none;
   color: #555;
 }
-

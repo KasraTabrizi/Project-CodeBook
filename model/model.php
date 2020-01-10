@@ -25,6 +25,11 @@ function deleteProject(){
 
 }
 
+//SHOW LIST OF ALL PROJECT
+function showAllProjects(){
+    
+}
+
 
 
 

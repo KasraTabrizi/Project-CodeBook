@@ -17,7 +17,7 @@
 <form class="container text-white align-items-center">
     
     <div class="row form-group"></div>
-
+    <div class="row form-group"></div>
     <!--titel-->
     <div class="row">
         <div class="col-md-2 col-sm-1"></div>
@@ -79,6 +79,8 @@
         </div>
         <div class="col-md-2 col-sm-1"></div>
     </div>
+    <div class="row form-group"></div>
+    <div class="row form-group"></div>
     <!--Create btn-->
     <div class="form-group row">
         <div class="col-md-2 col-sm-1"></div>
@@ -87,6 +89,7 @@
         </div>
         <div class="col-md-2 col-sm-1"></div>
     </div>
+    <div class="row form-group"></div>
 </form>
 
 <?php include('footer.php'); ?>

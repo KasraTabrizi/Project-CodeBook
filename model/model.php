@@ -2,8 +2,8 @@
 
 //USER RELATED FUNCTIONS
 
-//GENERATES A NEW USER WHEN REGISTERED
-function generateUser(){
+//CREATES A NEW USER WHEN REGISTERED
+function createUser(){
 
 }
 

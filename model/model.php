@@ -27,10 +27,13 @@ function deleteProject(){
 
 //SHOW LIST OF ALL PROJECT
 function showAllProjects(){
-    
+
 }
 
+//SHOW LIST OFF ALL COLLABORATORS
+function showAllCollaborators(){
 
+}
 
 
 ?>

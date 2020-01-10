@@ -78,7 +78,9 @@
       <div class="row text-center">
         <!-- TEAM ITEM 1 -->
         <div class="col-xl-3 col-sm-6 mb-5">
+          
           <div class="bg-white rounded shadow-sm py-5 px-4">
+            <!-- <div class="row ml-auto mr-0"><a href="#" class="badge badge-info">Add Friend</a></div> -->
             <img
               src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
               width="100"
@@ -86,7 +88,7 @@
               alt=""
             />
             <h5 class="mb-0">Nathalie Pillen</h5>
-            <span class="small text-uppercase text-muted">CEO - Founder</span>
+            <span class="small text-uppercase text-muted">CEO - Founder </span>
             <!-- SOCIAL MEDIA LINKS -->
             <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
               <!-- <h6 class="border-bottom">SOCIAL</h6> -->
@@ -107,6 +109,17 @@
                 <a href="#" class="social-link"
                   ><i class="fa fa-linkedin"></i
                 ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-user-plus"></i
+                ></a>
+              </li>
+
+              <li class="list-inline-item">
+                
+                  <a href="#" class="badge badge-info m-auto">Add Friend</a>
+                
               </li>
             </ul>
 
@@ -154,7 +167,7 @@
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               alt=""
             />
-            <h5 class="mb-0">Nathalie Pillen</h5>
+            <h5 class="mb-0">Denzel Washington</h5>
             <span class="small text-uppercase text-muted">CEO - Founder</span>
             <!-- SOCIAL MEDIA LINKS -->
             <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
@@ -175,6 +188,11 @@
               <li class="list-inline-item">
                 <a href="#" class="social-link"
                   ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-user-plus"></i
                 ></a>
               </li>
             </ul>
@@ -218,12 +236,12 @@
         <div class="col-xl-3 col-sm-6 mb-5">
           <div class="bg-white rounded shadow-sm py-5 px-4">
             <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
+              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-6.jpg"
               width="100"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               alt=""
             />
-            <h5 class="mb-0">Nathalie Pillen</h5>
+            <h5 class="mb-0">Michael Spielberg</h5>
             <span class="small text-uppercase text-muted">CEO - Founder</span>
             <!-- SOCIAL MEDIA LINKS -->
             <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
@@ -244,6 +262,11 @@
               <li class="list-inline-item">
                 <a href="#" class="social-link"
                   ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-user-plus"></i
                 ></a>
               </li>
             </ul>
@@ -292,7 +315,7 @@
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               alt=""
             />
-            <h5 class="mb-0">Nathalie Pillen</h5>
+            <h5 class="mb-0">Brandon Something</h5>
             <span class="small text-uppercase text-muted">CEO - Founder</span>
             <!-- SOCIAL MEDIA LINKS -->
             <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
@@ -313,6 +336,11 @@
               <li class="list-inline-item">
                 <a href="#" class="social-link"
                   ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-user-plus"></i
                 ></a>
               </li>
             </ul>
@@ -356,12 +384,12 @@
         <div class="col-xl-3 col-sm-6 mb-5">
           <div class="bg-white rounded shadow-sm py-5 px-4">
             <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
+              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-2.jpg"
               width="100"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               alt=""
             />
-            <h5 class="mb-0">Nathalie Pillen</h5>
+            <h5 class="mb-0">Idris Elba</h5>
             <span class="small text-uppercase text-muted">CEO - Founder</span>
             <!-- SOCIAL MEDIA LINKS -->
             <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
@@ -382,6 +410,11 @@
               <li class="list-inline-item">
                 <a href="#" class="social-link"
                   ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-user-plus"></i
                 ></a>
               </li>
             </ul>
@@ -425,12 +458,12 @@
         <div class="col-xl-3 col-sm-6 mb-5">
           <div class="bg-white rounded shadow-sm py-5 px-4">
             <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
+              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-3.jpg"
               width="100"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               alt=""
             />
-            <h5 class="mb-0">Nathalie Pillen</h5>
+            <h5 class="mb-0">Erin Joosen</h5>
             <span class="small text-uppercase text-muted">CEO - Founder</span>
             <!-- SOCIAL MEDIA LINKS -->
             <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
@@ -451,6 +484,11 @@
               <li class="list-inline-item">
                 <a href="#" class="social-link"
                   ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-user-plus"></i
                 ></a>
               </li>
             </ul>
@@ -494,12 +532,12 @@
         <div class="col-xl-3 col-sm-6 mb-5">
           <div class="bg-white rounded shadow-sm py-5 px-4">
             <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
+              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-5.jpg"
               width="100"
               class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
               alt=""
             />
-            <h5 class="mb-0">Nathalie Pillen</h5>
+            <h5 class="mb-0">Beard Guy</h5>
             <span class="small text-uppercase text-muted">CEO - Founder</span>
             <!-- SOCIAL MEDIA LINKS -->
             <ul class="social mb-0 list-inline mt-3 mb-0 list-group-flush">
@@ -520,6 +558,11 @@
               <li class="list-inline-item">
                 <a href="#" class="social-link"
                   ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="social-link"
+                  ><i class="fa fa-user-plus"></i
                 ></a>
               </li>
             </ul>

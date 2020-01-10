@@ -11,12 +11,9 @@
 }
 .filterChild {
   margin: 1rem;
-  font-size: 2rem;
+  
 }
-.filterChild button,
-.dropdown-item {
-  font-size: 2rem;
-}
+
 
 /* HOVER COLOR CHANGE NOT WORKING
 .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus{
@@ -29,8 +26,7 @@
   background-color: rgb(228, 236, 225);
   width: 100vw;
   margin: 0 auto;
-  font-size: 2rem;
-}
+  
 .resultsChild {
   background-color: rgb(212, 202, 202);
   width: 80vw;
@@ -46,7 +42,7 @@
   margin: 0 auto;
 }
 .col-8 p {
-  font-size: 1.25rem;
+  
   background-color: #fff;
   width: 75%;
   max-width: 500px;
@@ -66,6 +62,6 @@
 .btnGithub,
 .btnApply {
   margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  
   font-weight: bold;
 }

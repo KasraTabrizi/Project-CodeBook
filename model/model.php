@@ -45,12 +45,17 @@ function showAllProjects(){
 
 //FILTER ON PROJECTS
 function filterProjects(){
-    
+
 }
 
 //SHOW LIST OFF ALL COLLABORATORS
 function showAllCollaborators(){
 
+}
+
+//FILTER ON COLLABORATORS
+function filterCollaborators(){
+    
 }
 
 

@@ -1,24 +1,31 @@
 <?php
 
-//FUNCTION THAT GENERATES A NEW USER WHEN REGISTERED
+//GENERATES A NEW USER WHEN REGISTERED
 function generateUser(){
 
 }
 
-//FUNCTION THAT ADDS A NEW USER AS FRIEND
+//DELETES USERACCOUNT
+function deleteUser(){
+    
+}
+
+//ADDS A NEW USER AS FRIEND
 function addCollaborator(){
 
 }
 
-//FUNCTION THAT CREATES A NEW PROJECT
+//CREATES A NEW PROJECT
 function createProject(){
 
 }
 
-//FUNCTION THAT DELETES A PROJECT
+//DELETES A PROJECT
 function deleteProject(){
-    
+
 }
+
+
 
 
 ?>

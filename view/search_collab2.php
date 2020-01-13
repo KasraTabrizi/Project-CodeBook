@@ -17,59 +17,111 @@
     <!--HEADER/NAVBAR-->
 
     <?php include('header.php'); ?>
+<!--FILTER SEARCH BAR CONTAINER-->
 
-    <!--FILTER SEARCH BAR CONTAINER-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light container-fluid">
+      <!--brand logo-->
+      <a class="navbar-brand">Filter by: </a>
+      <!--HAMBURGER-->
+      <button
+        class="navbar-toggler ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
-
-  <!--brand logo-->
-  <a class="navbar-brand" href="#">Filter by: </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <!--navigation-->
-  <!--SKILLS-->
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    
-    <ul class="navbar-nav mr-auto">
+      <!--SKILLS SEARCH DROPDOWN-->
       
+      <form action="" method="POST" class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <!--dropdown SKILLS 1-->
+          <li class="nav-item dropdown">
+            <!--NAV ITEM DROPDOWN 1-->
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Skills
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <label for="JavaScript">
+                  <input
+                    type="text"
+                    class="dropdown-item"
+                    name="JavaScript"
+                    value="JavaScript"
+                  />
+                </label>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li>
+                <label for="PHP">
+                  <input
+                    type="text"
+                    class="dropdown-item"
+                    name="PHP"
+                    value="PHP"
+                  />
+                </label>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li>
+                <label for="React">
+                  <input
+                    type="text"
+                    class="dropdown-item"
+                    name="React"
+                    value="React"
+                  />
+                </label>
+              </li>
 
-  <!--dropdown SKILLS-->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              SKILLS
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">
-            <span>JavaScript</span>
-          </a>
-          <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">
-              <span>PHP</span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">
-              <span>React</span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">
-              <span>HTML5</span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">
-              <span>CSS3</span>
-            </a>
-        </div>
-      </li>
-      <!-- SEARCH BUTTON -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" type="button" role="button"> 
-        Search
-        </a>
-      </li> 
-      </ul>
-      </div>
+              <div class="dropdown-divider"></div>
+              <li>
+                <label for="html">
+                  <input
+                    type="text"
+                    class="dropdown-item"
+                    name="html"
+                    value="HTML"
+                  />
+                </label>
+              </li>
+
+              <div class="dropdown-divider"></div>
+              <li>
+                <label for="css">
+                  <input
+                    type="text"
+                    class="dropdown-item"
+                    name="css"
+                    value="CSS"
+                  />
+                </label>
+              </li>
+            </ul>
+          </li>
+          <!--END OF NAV ITEM DROPDOWN 1-->
+          <!-- SEARCH BUTTON -->
+          <li class="nav-item dropdown">
+            <button class="nav-link" type="submit" role="button">
+              Search
+            </button>
+          </li>
+        </ul><!--end of navbar mr-auto-->
+      </form>
+      
     </nav>
 
     <!--TEAM ITEMS CONTAINER-->
@@ -116,12 +168,6 @@
                 ></a>
               </li>
               
-
-              <!-- <li class="list-inline-item">
-                
-                  <a href="#" class="badge badge-info m-auto">Add Friend</a>
-                
-              </li> -->
             </ul>
 
             <!-- SKILLS BADGES -->

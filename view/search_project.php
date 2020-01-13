@@ -34,7 +34,8 @@
 
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
       <!--brand logo-->
-      <a class="navbar-brand" href="#">Filter by: </a>
+      <a class="navbar-brand">Filter by: </a>
+      <!--HAMBURGER-->
       <button
         class="navbar-toggler"
         type="button"
@@ -47,11 +48,13 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!--SKILLS-->
+      <!--SKILLS SEARCH DROPDOWN-->
+      <form action="" method="POST">
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <!--dropdown SKILLS 1-->
           <li class="nav-item dropdown">
+            <!--NAV ITEM DROPDOWN 1-->
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -63,30 +66,70 @@
             >
               Skills
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">
-                <span>JavaScript</span>
-              </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <label for="JavaScript">
+                  <input
+                    type="text"
+                    class="dropdown-item"
+                    name="JavaScript"
+                    value="JavaScript"
+                  />
+                </label>
+              </li>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span>PHP</span>
-              </a>
+              <li>
+                <label for="PHP">
+                  <input
+                    type="text"
+                    class="dropdown-item"
+                    name="PHP"
+                    value="PHP"
+                  />
+                </label>
+              </li>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span>React</span>
-              </a>
+              <li>
+                <label for="React">
+                  <input
+                    type="text"
+                    class="dropdown-item"
+                    name="React"
+                    value="React"
+                  />
+                </label>
+              </li>
+
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span>HTML5</span>
-              </a>
+              <li>
+                <label for="html">
+                  <input
+                    type="text"
+                    class="dropdown-item"
+                    name="html"
+                    value="HTML"
+                  />
+                </label>
+              </li>
+
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span>CSS3</span>
-              </a>
-            </div>
+              <li>
+                <label for="css">
+                  <input
+                    type="text"
+                    class="dropdown-item"
+                    name="css"
+                    value="CSS"
+                  />
+                </label>
+              </li>
+            </ul>
           </li>
+          <!--END OF NAV ITEM DROPDOWN 1-->
+
           <!--dropdown AMOUNT COLLABORATORS-->
           <li class="nav-item dropdown">
+            <!--NAV ITEM DROPDOWN 2-->
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -98,36 +141,77 @@
             >
               Collaborators
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">
-                <span>1-5</span>
-              </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <label for="1-5">
+                  <input
+                    type="text"
+                    class="dropdown-item"
+                    name="1-5"
+                    value="1-5"
+                  />
+                </label>
+              </li>
+
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span>5-10</span>
-              </a>
+              <li>
+                <label for="5-10">
+                  <input
+                    type="text"
+                    class="dropdown-item"
+                    name="5-10"
+                    value="5-10"
+                  />
+                </label>
+              </li>
+
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span>10-25</span>
-              </a>
+              <li>
+                <label for="10-25">
+                  <input
+                    type="text"
+                    class="dropdown-item"
+                    name="10-25"
+                    value="10-25"
+                  />
+                </label>
+              </li>
+
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span>25-50</span>
-              </a>
+              <li>
+                <label for="25-50">
+                  <input
+                    type="text"
+                    class="dropdown-item"
+                    name="25-50"
+                    value="25-50"
+                  />
+                </label>
+              </li>
+
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span>> 50</span>
-              </a>
-            </div>
+              <li>
+                <label for="> 50">
+                  <input
+                    type="text"
+                    class="dropdown-item"
+                    name="> 50"
+                    value="> 50"
+                  />
+                </label>
+              </li>
+            </ul>
           </li>
+          <!--END OF NAV ITEM DROPDOWN 2-->
           <!-- SEARCH BUTTON -->
           <li class="nav-item dropdown">
-            <a class="nav-link" type="button" role="button">
+            <button class="nav-link" type="submit" role="button">
               Search
-            </a>
+            </button>
           </li>
-        </ul>
+        </ul><!--end of navbar mr-auto-->
       </div>
+      </form>
     </nav>
 
     <!--SEARCH RESULTS CONTAINER-->
@@ -368,8 +452,8 @@
               </li>
             </ul>
           </div>
-        </div><!--end of second row-->
-        
+        </div>
+        <!--end of second row-->
 
         <!--THIRD ROW WITH 2 BUTTONS-->
         <div class="row">

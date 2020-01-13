@@ -42,80 +42,72 @@
           <!--dropdown SKILLS 1-->
           <li class="nav-item dropdown">
             <!--NAV ITEM DROPDOWN 1-->
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Skills
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li>
-                <label for="JavaScript">
-                  <input
-                    type="text"
-                    class="dropdown-item"
-                    name="JavaScript"
-                    value="JavaScript"
-                  />
-                </label>
-              </li>
-              <div class="dropdown-divider"></div>
-              <li>
-                <label for="PHP">
-                  <input
-                    type="text"
-                    class="dropdown-item"
-                    name="PHP"
-                    value="PHP"
-                  />
-                </label>
-              </li>
-              <div class="dropdown-divider"></div>
-              <li>
-                <label for="React">
-                  <input
-                    type="text"
-                    class="dropdown-item"
-                    name="React"
-                    value="React"
-                  />
-                </label>
-              </li>
+          
+            <!-- THE GODDAMN SKILL DROPDOWN -->
+                                                <div class="md-form form-sm mb-0 mr-3">
+                                                    <form class='myform'>
 
-              <div class="dropdown-divider"></div>
-              <li>
-                <label for="html">
-                  <input
-                    type="text"
-                    class="dropdown-item"
-                    name="html"
-                    value="HTML"
-                  />
-                </label>
-              </li>
+                                                        <div class="dropdown cq-dropdown" data-name='statuses'>
+                                                            <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="btndropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                Skills
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu" aria-labelledby="btndropdown">
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='jQuery' checked>
+                                                                        jQuery
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='Bootstrap'>
+                                                                        Bootstrap
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='HTML'>
+                                                                        HTML
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='JavaScript' checked>
+                                                                        JavaScript
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='CSS' checked>
+                                                                        CSS
+                                                                    </label>
+                                                                </li>
+                                                                <li class='text-center'>
+                                                                    <button type='button' class='btn btn-xs btn-danger clear close-dropdown' value='Clear'>Clear</button>
+                                                                    <button type='button' class='btn btn-xs btn-success save' value='Save'>Save</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
 
-              <div class="dropdown-divider"></div>
-              <li>
-                <label for="css">
-                  <input
-                    type="text"
-                    class="dropdown-item"
-                    name="css"
-                    value="CSS"
-                  />
-                </label>
-              </li>
-            </ul>
+                                                        <BR>
+
+                                                    </form>
+
+                                                </div><!--END OF GODDAMN DROPDOWN-->
+              
+            
           </li>
           <!--END OF NAV ITEM DROPDOWN 1-->
+                                                        <BR>
+
+                                                    </form>
+
+                                                </div><!--END OF GODDAMN DROPDOWN-->
+          <!--END OF NAV ITEM DROPDOWN 2-->
           <!-- SEARCH BUTTON -->
           <li class="nav-item dropdown">
-            <button class="nav-link" type="submit" role="button">
+            <button class="nav-link btn btn-primary" type="submit" role="button">
               Search
             </button>
           </li>
@@ -650,5 +642,14 @@
 
     <?php include('footer.php'); ?>
     <?php include('bootstrap_scripts.php'); ?>
+
+     <!--DROPDOWN MULTISELECT STUFF -->
+    <script>
+        $(function() {
+            $('.cq-dropdown').dropdownCheckboxes();
+        });
+    </script>
+    <script src="../resources/bootstrap_js/dropdownCheckboxes.min.js"></script>
+    
   </body>
 </html>

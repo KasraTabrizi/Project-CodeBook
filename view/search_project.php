@@ -24,7 +24,9 @@
       integrity="sha256-+o/X+QCcfTkES5MroTdNL5zrLNGb3i4dYdWPWuq6whY="
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="../styles/dropdownCheckboxes.min.css">
+    <title>Search For Project</title>
   </head>
   <body>
     <!--HEADER/NAVBAR-->
@@ -55,157 +57,123 @@
           <!--dropdown SKILLS 1-->
           <li class="nav-item dropdown">
             <!--NAV ITEM DROPDOWN 1-->
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Skills
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li>
-                <label for="JavaScript">
-                  <input
-                    type="text"
-                    class="dropdown-item"
-                    name="JavaScript"
-                    value="JavaScript"
-                  />
-                </label>
-              </li>
-              <div class="dropdown-divider"></div>
-              <li>
-                <label for="PHP">
-                  <input
-                    type="text"
-                    class="dropdown-item"
-                    name="PHP"
-                    value="PHP"
-                  />
-                </label>
-              </li>
-              <div class="dropdown-divider"></div>
-              <li>
-                <label for="React">
-                  <input
-                    type="text"
-                    class="dropdown-item"
-                    name="React"
-                    value="React"
-                  />
-                </label>
-              </li>
+          
+            <!-- THE GODDAMN SKILL DROPDOWN -->
+                                                <div class="md-form form-sm mb-0 mr-3">
+                                                    <form class='myform'>
 
-              <div class="dropdown-divider"></div>
-              <li>
-                <label for="html">
-                  <input
-                    type="text"
-                    class="dropdown-item"
-                    name="html"
-                    value="HTML"
-                  />
-                </label>
-              </li>
+                                                        <div class="dropdown cq-dropdown" data-name='statuses'>
+                                                            <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="btndropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                Skills
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu" aria-labelledby="btndropdown">
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='jQuery' checked>
+                                                                        jQuery
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='Bootstrap'>
+                                                                        Bootstrap
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='HTML'>
+                                                                        HTML
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='JavaScript' checked>
+                                                                        JavaScript
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='CSS' checked>
+                                                                        CSS
+                                                                    </label>
+                                                                </li>
+                                                                <li class='text-center'>
+                                                                    <button type='button' class='btn btn-xs btn-danger clear close-dropdown' value='Clear'>Clear</button>
+                                                                    <button type='button' class='btn btn-xs btn-success save' value='Save'>Save</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
 
-              <div class="dropdown-divider"></div>
-              <li>
-                <label for="css">
-                  <input
-                    type="text"
-                    class="dropdown-item"
-                    name="css"
-                    value="CSS"
-                  />
-                </label>
-              </li>
-            </ul>
+                                                        <BR>
+
+                                                    </form>
+
+                                                </div><!--END OF GODDAMN DROPDOWN-->
+              
+            
           </li>
           <!--END OF NAV ITEM DROPDOWN 1-->
 
           <!--dropdown AMOUNT COLLABORATORS-->
           <li class="nav-item dropdown">
             <!--NAV ITEM DROPDOWN 2-->
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Collaborators
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li>
-                <label for="1-5">
-                  <input
-                    type="text"
-                    class="dropdown-item"
-                    name="1-5"
-                    value="1-5"
-                  />
-                </label>
-              </li>
+                   <!-- THE GODDAMN SKILL DROPDOWN -->
+                                                <div class="md-form form-sm mb-0 mr-3">
+                                                    <form class='myform'>
 
-              <div class="dropdown-divider"></div>
-              <li>
-                <label for="5-10">
-                  <input
-                    type="text"
-                    class="dropdown-item"
-                    name="5-10"
-                    value="5-10"
-                  />
-                </label>
-              </li>
+                                                        <div class="dropdown cq-dropdown" data-name='statuses'>
+                                                            <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="btndropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                Collaborators
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu" aria-labelledby="btndropdown">
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='1-5' checked>
+                                                                        1-5
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='5-10'>
+                                                                        5-10
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='10-25'>
+                                                                        10-25
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='25-50' checked>
+                                                                        25-50
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='> 50' checked>
+                                                                        > 50
+                                                                    </label>
+                                                                </li>
+                                                                <li class='text-center'>
+                                                                    <button type='button' class='btn btn-xs btn-danger clear close-dropdown' value='Clear'>Clear</button>
+                                                                    <button type='button' class='btn btn-xs btn-success save' value='Save'>Save</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
 
-              <div class="dropdown-divider"></div>
-              <li>
-                <label for="10-25">
-                  <input
-                    type="text"
-                    class="dropdown-item"
-                    name="10-25"
-                    value="10-25"
-                  />
-                </label>
-              </li>
+                                                        <BR>
 
-              <div class="dropdown-divider"></div>
-              <li>
-                <label for="25-50">
-                  <input
-                    type="text"
-                    class="dropdown-item"
-                    name="25-50"
-                    value="25-50"
-                  />
-                </label>
-              </li>
+                                                    </form>
 
-              <div class="dropdown-divider"></div>
-              <li>
-                <label for="> 50">
-                  <input
-                    type="text"
-                    class="dropdown-item"
-                    name="> 50"
-                    value="> 50"
-                  />
-                </label>
-              </li>
-            </ul>
-          </li>
+                                                </div><!--END OF GODDAMN DROPDOWN-->
           <!--END OF NAV ITEM DROPDOWN 2-->
           <!-- SEARCH BUTTON -->
           <li class="nav-item dropdown">
-            <button class="nav-link" type="submit" role="button">
+            <button class="nav-link btn btn-primary" type="submit" role="button">
               Search
             </button>
           </li>

@@ -32,12 +32,12 @@
 
     <!--FILTER SEARCH BAR CONTAINER-->
 
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light container-fluid">
       <!--brand logo-->
       <a class="navbar-brand">Filter by: </a>
       <!--HAMBURGER-->
       <button
-        class="navbar-toggler"
+        class="navbar-toggler ml-auto"
         type="button"
         data-toggle="collapse"
         data-target="#navbarCollapse"
@@ -49,8 +49,8 @@
       </button>
 
       <!--SKILLS SEARCH DROPDOWN-->
-      <form action="" method="POST">
-      <div class="collapse navbar-collapse" id="navbarCollapse">
+      
+      <form action="" method="POST" class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <!--dropdown SKILLS 1-->
           <li class="nav-item dropdown">
@@ -210,13 +210,13 @@
             </button>
           </li>
         </ul><!--end of navbar mr-auto-->
-      </div>
       </form>
+      
     </nav>
 
     <!--SEARCH RESULTS CONTAINER-->
 
-    <div class="container-fluid resultsContainer">
+    <div class="container resultsContainer">
       <!--NEW VERSION OF PROJECT ITEM-->
       <div class="container resultsChild">
         <div class="row">

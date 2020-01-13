@@ -1,6 +1,6 @@
 <?php
 
-require "test.php";
+require "database.php";
 
 // executes 
 generateUsers();

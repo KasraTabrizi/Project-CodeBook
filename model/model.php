@@ -3,22 +3,31 @@
 //USER RELATED FUNCTIONS
 
 //CREATES A NEW USER IN DATABASE WHEN REGISTERED
-function createUser(){
+function createUserDB($data){
+    $collectionName = "Users";
+    $database = connectDB("KasraTabrizi", "codebook");
+    $user_id = reateOneDB($database, $collectionName, $data);
+}
+
+function generateUser(){
 
 }
 
 //DELETES USERACCOUNT
-function deleteUser(){
+function deleteUserDB($data){
+    $collectionName = "Users";
+    $database = connectDB("KasraTabrizi", "codebook");
+    $result = deleteOneDB($database,$collectionName,$data);
     
 }
 
 //ADDS A COLLABORATOR
-function addCollaborator(){
-
+function addCollaboratorDB(){
+    
 }
 
 //DELETES A COLLABORATOR
-function deleteCollaborator(){
+function deleteCollaboratorDB(){
 
 }
 

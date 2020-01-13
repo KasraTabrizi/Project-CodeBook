@@ -24,7 +24,9 @@
       integrity="sha256-+o/X+QCcfTkES5MroTdNL5zrLNGb3i4dYdWPWuq6whY="
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="../styles/dropdownCheckboxes.min.css">
+    <title>Search For Project</title>
   </head>
   <body>
     <!--HEADER/NAVBAR-->
@@ -32,11 +34,12 @@
 
     <!--FILTER SEARCH BAR CONTAINER-->
 
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light container-fluid">
       <!--brand logo-->
-      <a class="navbar-brand" href="#">Filter by: </a>
+      <a class="navbar-brand">Filter by: </a>
+      <!--HAMBURGER-->
       <button
-        class="navbar-toggler"
+        class="navbar-toggler ml-auto"
         type="button"
         data-toggle="collapse"
         data-target="#navbarCollapse"
@@ -47,247 +50,141 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!--SKILLS-->
-      <div class="collapse navbar-collapse" id="navbarCollapse">
+      <!--SKILLS SEARCH DROPDOWN-->
+      
+      <form action="" method="POST" class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <!--dropdown SKILLS 1-->
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Skills
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">
-                <span>JavaScript</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span>PHP</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span>React</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span>HTML5</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span>CSS3</span>
-              </a>
-            </div>
+            <!--NAV ITEM DROPDOWN 1-->
+          
+            <!-- THE GODDAMN SKILL DROPDOWN -->
+                                                <div class="md-form form-sm mb-0 mr-3">
+                                                    <form class='myform'>
+
+                                                        <div class="dropdown cq-dropdown" data-name='statuses'>
+                                                            <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="btndropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                Skills
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu" aria-labelledby="btndropdown">
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='jQuery' checked>
+                                                                        jQuery
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='Bootstrap'>
+                                                                        Bootstrap
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='HTML'>
+                                                                        HTML
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='JavaScript' checked>
+                                                                        JavaScript
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='CSS' checked>
+                                                                        CSS
+                                                                    </label>
+                                                                </li>
+                                                                <li class='text-center'>
+                                                                    <button type='button' class='btn btn-xs btn-danger clear close-dropdown' value='Clear'>Clear</button>
+                                                                    <button type='button' class='btn btn-xs btn-success save' value='Save'>Save</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <BR>
+
+                                                    </form>
+
+                                                </div><!--END OF GODDAMN DROPDOWN-->
+              
+            
           </li>
+          <!--END OF NAV ITEM DROPDOWN 1-->
+
           <!--dropdown AMOUNT COLLABORATORS-->
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Collaborators
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">
-                <span>1-5</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span>5-10</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span>10-25</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span>25-50</span>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <span>> 50</span>
-              </a>
-            </div>
-          </li>
+            <!--NAV ITEM DROPDOWN 2-->
+                   <!-- THE GODDAMN SKILL DROPDOWN -->
+                                                <div class="md-form form-sm mb-0 mr-3">
+                                                    <form class='myform'>
+
+                                                        <div class="dropdown cq-dropdown" data-name='statuses'>
+                                                            <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="btndropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                Collaborators
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu" aria-labelledby="btndropdown">
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='1-5' checked>
+                                                                        1-5
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='5-10'>
+                                                                        5-10
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='10-25'>
+                                                                        10-25
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='25-50' checked>
+                                                                        25-50
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='> 50' checked>
+                                                                        > 50
+                                                                    </label>
+                                                                </li>
+                                                                <li class='text-center'>
+                                                                    <button type='button' class='btn btn-xs btn-danger clear close-dropdown' value='Clear'>Clear</button>
+                                                                    <button type='button' class='btn btn-xs btn-success save' value='Save'>Save</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <BR>
+
+                                                    </form>
+
+                                                </div><!--END OF GODDAMN DROPDOWN-->
+          <!--END OF NAV ITEM DROPDOWN 2-->
           <!-- SEARCH BUTTON -->
           <li class="nav-item dropdown">
-            <a class="nav-link" type="button" role="button">
+            <button class="nav-link btn btn-primary" type="submit" role="button">
               Search
-            </a>
+            </button>
           </li>
-        </ul>
-      </div>
+        </ul><!--end of navbar mr-auto-->
+      </form>
+      
     </nav>
 
     <!--SEARCH RESULTS CONTAINER-->
 
-    <div class="container-fluid resultsContainer">
-      <div class="row resultsChild">
-        <div class="col col-8">
-          <div class="row">TITLE PROJECT</div>
-          <div class="row">
-            <div>
-              <header>DESCRIPTION</header>
-            </div>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Maiores, itaque.
-              </p>
-            </div>
-          </div>
-          <div class="row text-white">COLLABORATORS</div>
-          <div class="list-inline-item mr-auto rounded">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
-              width="50"
-              class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h6 class="mb-0">Nathalie P.</h6>
-          </div>
-          <div class="list-inline-item mr-auto rounded">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
-              width="50"
-              class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h6 class="mb-0">Kasra T.</h6>
-          </div>
-          <div class="list-inline-item mr-auto rounded">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg"
-              width="50"
-              class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h6 class="mb-0">Aline L.</h6>
-          </div>
-
-          <div class="row text-white">SKILLS</div>
-          <ul class="social mb-1 list-inline mt-2">
-            <!-- <h6 class="border-bottom">SKILLS</h6> -->
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/wired/48/000000/python.png"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/dusk/48/000000/html-5.png"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/color/48/000000/css3.png"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/windows/48/000000/sass.png"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/color/48/000000/angularjs.png"
-              /></a>
-            </li>
-          </ul>
-        </div>
-        <div class="col col-4">
-          <button class="btn btn-primary btnGithub">GITHUB</button>
-
-          <button class="btn btn-primary btnApply">APPLY</button>
-        </div>
-      </div>
-
-      <div class="row resultsChild">
-        <div class="col col-8">
-          <div class="row">TITLE PROJECT</div>
-          <div class="row">
-            <header>DESCRIPTION</header>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-              itaque.
-            </p>
-          </div>
-          <div class="row text-white">COLLABORATORS</div>
-          <div class="list-inline-item mr-auto rounded">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
-              width="50"
-              class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h6 class="mb-0">Nathalie P.</h6>
-          </div>
-          <div class="list-inline-item mr-auto rounded">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
-              width="50"
-              class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h6 class="mb-0">Kasra T.</h6>
-          </div>
-          <div class="list-inline-item mr-auto rounded">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg"
-              width="50"
-              class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h6 class="mb-0">Aline L.</h6>
-          </div>
-
-          <div class="row text-white">SKILLS</div>
-          <ul class="social mb-1 list-inline mt-2">
-            <!-- <h6 class="border-bottom">SKILLS</h6> -->
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/wired/48/000000/python.png"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/dusk/48/000000/html-5.png"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/color/48/000000/css3.png"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/windows/48/000000/sass.png"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/color/48/000000/angularjs.png"
-              /></a>
-            </li>
-          </ul>
-        </div>
-        <div class="col col-4">
-          <button class="btn btn-primary btnGithub">GITHUB</button>
-
-          <button class="btn btn-primary btnApply">APPLY</button>
-        </div>
-      </div>
+    <div class="container resultsContainer">
       <!--NEW VERSION OF PROJECT ITEM-->
       <div class="container resultsChild">
         <div class="row">
@@ -368,8 +265,8 @@
               </li>
             </ul>
           </div>
-        </div><!--end of second row-->
-        
+        </div>
+        <!--end of second row-->
 
         <!--THIRD ROW WITH 2 BUTTONS-->
         <div class="row">
@@ -384,156 +281,387 @@
       </div>
       <!--end of container-->
 
-      <div class="row resultsChild">
-        <div class="col col-8">
-          <div class="row">TITLE PROJECT</div>
-          <div class="row">
-            <header>DESCRIPTION</header>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-              itaque.
-            </p>
+      <!--NEW VERSION OF PROJECT ITEM-->
+      <div class="container resultsChild">
+        <div class="row">
+          <div class="col col-12">
+            <h6 class="mt-2">TITLE PROJECT:</h6>
+            <div class="">
+              <h6>DESCRIPTION:</h6>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Maiores, itaque.
+              </p>
+            </div>
           </div>
-          <div class="row text-white">COLLABORATORS</div>
-          <div class="list-inline-item mr-auto rounded">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
-              width="50"
-              class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h6 class="mb-0">Nathalie P.</h6>
-          </div>
-          <div class="list-inline-item mr-auto rounded">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
-              width="50"
-              class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h6 class="mb-0">Kasra T.</h6>
-          </div>
-          <div class="list-inline-item mr-auto rounded">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg"
-              width="50"
-              class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h6 class="mb-0">Aline L.</h6>
-          </div>
-
-          <div class="row text-white">SKILLS</div>
-          <ul class="social mb-1 list-inline mt-2">
-            <!-- <h6 class="border-bottom">SKILLS</h6> -->
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/wired/48/000000/python.png"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/dusk/48/000000/html-5.png"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/color/48/000000/css3.png"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/windows/48/000000/sass.png"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/color/48/000000/angularjs.png"
-              /></a>
-            </li>
-          </ul>
         </div>
-        <div class="col col-4">
-          <button class="btn btn-primary btnGithub">GITHUB</button>
+        <!--end of row-->
 
-          <button class="btn btn-primary btnApply">APPLY</button>
+        <div class="row">
+          <div class="col col-sm-12 col-md-6 col-xl-6">
+            <div class="text-center">COLLABORATORS</div>
+            <div class="list-inline-item mr-auto rounded">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
+                width="50"
+                class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
+                alt=""
+              />
+              <h6 class="mb-0">Nathalie P.</h6>
+            </div>
+            <div class="list-inline-item mr-auto rounded">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
+                width="50"
+                class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
+                alt=""
+              />
+              <h6 class="mb-0">Kasra T.</h6>
+            </div>
+            <div class="list-inline-item mr-auto rounded">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg"
+                width="50"
+                class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
+                alt=""
+              />
+              <h6 class="mb-0">Aline L.</h6>
+            </div>
+          </div>
+          <!--end of col-6-->
+          <div class="col col-sm-12 col-md-6 col-xl-6">
+            <div class="text-center">SKILLS</div>
+            <ul class="social mb-1 list-inline mt-2">
+              <!-- <h6 class="border-bottom">SKILLS</h6> -->
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/wired/48/000000/python.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/dusk/48/000000/html-5.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/css3.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/windows/48/000000/sass.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/color/48/000000/angularjs.png"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <!--end of second row-->
+
+        <!--THIRD ROW WITH 2 BUTTONS-->
+        <div class="row">
+          <div class="col col-6">
+            <button class="btn btn-primary mt-2 btnGithub">GITHUB</button>
+          </div>
+          <div class="col col-6">
+            <button class="btn btn-primary mt-2 btnApply">APPLY</button>
+          </div>
+        </div>
+        <!--END OF THIRD ROW-->
       </div>
-      <div class="row resultsChild">
-        <div class="col col-8">
-          <div class="row">TITLE PROJECT</div>
-          <div class="row">
-            <header>DESCRIPTION</header>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores,
-              itaque.
-            </p>
+      <!--end of container-->
+      <!--NEW VERSION OF PROJECT ITEM-->
+      <div class="container resultsChild">
+        <div class="row">
+          <div class="col col-12">
+            <h6 class="mt-2">TITLE PROJECT:</h6>
+            <div class="">
+              <h6>DESCRIPTION:</h6>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Maiores, itaque.
+              </p>
+            </div>
           </div>
-          <div class="row text-white">COLLABORATORS</div>
-          <div class="list-inline-item mr-auto rounded">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
-              width="50"
-              class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h6 class="mb-0">Nathalie P.</h6>
-          </div>
-          <div class="list-inline-item mr-auto rounded">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
-              width="50"
-              class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h6 class="mb-0">Kasra T.</h6>
-          </div>
-          <div class="list-inline-item mr-auto rounded">
-            <img
-              src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg"
-              width="50"
-              class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
-              alt=""
-            />
-            <h6 class="mb-0">Aline L.</h6>
-          </div>
-
-          <div class="row text-white">SKILLS</div>
-          <ul class="social mb-1 list-inline mt-2">
-            <!-- <h6 class="border-bottom">SKILLS</h6> -->
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/wired/48/000000/python.png"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/dusk/48/000000/html-5.png"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/color/48/000000/css3.png"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/windows/48/000000/sass.png"
-              /></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"
-                ><img src="https://img.icons8.com/color/48/000000/angularjs.png"
-              /></a>
-            </li>
-          </ul>
         </div>
-        <div class="col col-4">
-          <button class="btn btn-primary btnGithub">GITHUB</button>
+        <!--end of row-->
 
-          <button class="btn btn-primary btnApply">APPLY</button>
+        <div class="row">
+          <div class="col col-sm-12 col-md-6 col-xl-6">
+            <div class="text-center">COLLABORATORS</div>
+            <div class="list-inline-item mr-auto rounded">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
+                width="50"
+                class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
+                alt=""
+              />
+              <h6 class="mb-0">Nathalie P.</h6>
+            </div>
+            <div class="list-inline-item mr-auto rounded">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
+                width="50"
+                class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
+                alt=""
+              />
+              <h6 class="mb-0">Kasra T.</h6>
+            </div>
+            <div class="list-inline-item mr-auto rounded">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg"
+                width="50"
+                class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
+                alt=""
+              />
+              <h6 class="mb-0">Aline L.</h6>
+            </div>
+          </div>
+          <!--end of col-6-->
+          <div class="col col-sm-12 col-md-6 col-xl-6">
+            <div class="text-center">SKILLS</div>
+            <ul class="social mb-1 list-inline mt-2">
+              <!-- <h6 class="border-bottom">SKILLS</h6> -->
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/wired/48/000000/python.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/dusk/48/000000/html-5.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/css3.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/windows/48/000000/sass.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/color/48/000000/angularjs.png"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <!--end of second row-->
+
+        <!--THIRD ROW WITH 2 BUTTONS-->
+        <div class="row">
+          <div class="col col-6">
+            <button class="btn btn-primary mt-2 btnGithub">GITHUB</button>
+          </div>
+          <div class="col col-6">
+            <button class="btn btn-primary mt-2 btnApply">APPLY</button>
+          </div>
+        </div>
+        <!--END OF THIRD ROW-->
       </div>
+      <!--end of container-->
+
+      <!--NEW VERSION OF PROJECT ITEM-->
+      <div class="container resultsChild">
+        <div class="row">
+          <div class="col col-12">
+            <h6 class="mt-2">TITLE PROJECT:</h6>
+            <div class="">
+              <h6>DESCRIPTION:</h6>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Maiores, itaque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--end of row-->
+
+        <div class="row">
+          <div class="col col-sm-12 col-md-6 col-xl-6">
+            <div class="text-center">COLLABORATORS</div>
+            <div class="list-inline-item mr-auto rounded">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
+                width="50"
+                class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
+                alt=""
+              />
+              <h6 class="mb-0">Nathalie P.</h6>
+            </div>
+            <div class="list-inline-item mr-auto rounded">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
+                width="50"
+                class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
+                alt=""
+              />
+              <h6 class="mb-0">Kasra T.</h6>
+            </div>
+            <div class="list-inline-item mr-auto rounded">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg"
+                width="50"
+                class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
+                alt=""
+              />
+              <h6 class="mb-0">Aline L.</h6>
+            </div>
+          </div>
+          <!--end of col-6-->
+          <div class="col col-sm-12 col-md-6 col-xl-6">
+            <div class="text-center">SKILLS</div>
+            <ul class="social mb-1 list-inline mt-2">
+              <!-- <h6 class="border-bottom">SKILLS</h6> -->
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/wired/48/000000/python.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/dusk/48/000000/html-5.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/css3.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/windows/48/000000/sass.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/color/48/000000/angularjs.png"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end of second row-->
+
+        <!--THIRD ROW WITH 2 BUTTONS-->
+        <div class="row">
+          <div class="col col-6">
+            <button class="btn btn-primary mt-2 btnGithub">GITHUB</button>
+          </div>
+          <div class="col col-6">
+            <button class="btn btn-primary mt-2 btnApply">APPLY</button>
+          </div>
+        </div>
+        <!--END OF THIRD ROW-->
+      </div>
+      <!--end of container-->
+      <!--NEW VERSION OF PROJECT ITEM-->
+      <div class="container resultsChild">
+        <div class="row">
+          <div class="col col-12">
+            <h6 class="mt-2">TITLE PROJECT:</h6>
+            <div class="">
+              <h6>DESCRIPTION:</h6>
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Maiores, itaque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--end of row-->
+
+        <div class="row">
+          <div class="col col-sm-12 col-md-6 col-xl-6">
+            <div class="text-center">COLLABORATORS</div>
+            <div class="list-inline-item mr-auto rounded">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
+                width="50"
+                class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
+                alt=""
+              />
+              <h6 class="mb-0">Nathalie P.</h6>
+            </div>
+            <div class="list-inline-item mr-auto rounded">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
+                width="50"
+                class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
+                alt=""
+              />
+              <h6 class="mb-0">Kasra T.</h6>
+            </div>
+            <div class="list-inline-item mr-auto rounded">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg"
+                width="50"
+                class="img-fluid rounded-circle mb-1 img-thumbnail shadow-sm"
+                alt=""
+              />
+              <h6 class="mb-0">Aline L.</h6>
+            </div>
+          </div>
+          <!--end of col-6-->
+          <div class="col col-sm-12 col-md-6 col-xl-6">
+            <div class="text-center">SKILLS</div>
+            <ul class="social mb-1 list-inline mt-2">
+              <!-- <h6 class="border-bottom">SKILLS</h6> -->
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/wired/48/000000/python.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/dusk/48/000000/html-5.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/color/48/000000/css3.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img src="https://img.icons8.com/windows/48/000000/sass.png"
+                /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"
+                  ><img
+                    src="https://img.icons8.com/color/48/000000/angularjs.png"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end of second row-->
+
+        <!--THIRD ROW WITH 2 BUTTONS-->
+        <div class="row">
+          <div class="col col-6">
+            <button class="btn btn-primary mt-2 btnGithub">GITHUB</button>
+          </div>
+          <div class="col col-6">
+            <button class="btn btn-primary mt-2 btnApply">APPLY</button>
+          </div>
+        </div>
+        <!--END OF THIRD ROW-->
+      </div>
+      <!--end of container-->
     </div>
 
     <!--FOOTER-->

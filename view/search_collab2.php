@@ -17,59 +17,103 @@
     <!--HEADER/NAVBAR-->
 
     <?php include('header.php'); ?>
+<!--FILTER SEARCH BAR CONTAINER-->
 
-    <!--FILTER SEARCH BAR CONTAINER-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light container-fluid">
+      <!--brand logo-->
+      <a class="navbar-brand">Filter by: </a>
+      <!--HAMBURGER-->
+      <button
+        class="navbar-toggler ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
-
-  <!--brand logo-->
-  <a class="navbar-brand" href="#">Filter by: </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <!--navigation-->
-  <!--SKILLS-->
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    
-    <ul class="navbar-nav mr-auto">
+      <!--SKILLS SEARCH DROPDOWN-->
       
+      <form action="" method="POST" class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <!--dropdown SKILLS 1-->
+          <li class="nav-item dropdown">
+            <!--NAV ITEM DROPDOWN 1-->
+          
+            <!-- THE GODDAMN SKILL DROPDOWN -->
+                                                <div class="md-form form-sm mb-0 mr-3">
+                                                    <form class='myform'>
 
-  <!--dropdown SKILLS-->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              SKILLS
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">
-            <span>JavaScript</span>
-          </a>
-          <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">
-              <span>PHP</span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">
-              <span>React</span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">
-              <span>HTML5</span>
-            </a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">
-              <span>CSS3</span>
-            </a>
-        </div>
-      </li>
-      <!-- SEARCH BUTTON -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" type="button" role="button"> 
-        Search
-        </a>
-      </li> 
-      </ul>
-      </div>
+                                                        <div class="dropdown cq-dropdown" data-name='statuses'>
+                                                            <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="btndropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                Skills
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu" aria-labelledby="btndropdown">
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='jQuery' checked>
+                                                                        jQuery
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='Bootstrap'>
+                                                                        Bootstrap
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='HTML'>
+                                                                        HTML
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='JavaScript' checked>
+                                                                        JavaScript
+                                                                    </label>
+                                                                </li>
+                                                                <li>
+                                                                    <label class="radio-btn">
+                                                                        <input type="checkbox" value='CSS' checked>
+                                                                        CSS
+                                                                    </label>
+                                                                </li>
+                                                                <li class='text-center'>
+                                                                    <button type='button' class='btn btn-xs btn-danger clear close-dropdown' value='Clear'>Clear</button>
+                                                                    <button type='button' class='btn btn-xs btn-success save' value='Save'>Save</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <BR>
+
+                                                    </form>
+
+                                                </div><!--END OF GODDAMN DROPDOWN-->
+              
+            
+          </li>
+          <!--END OF NAV ITEM DROPDOWN 1-->
+                                                        <BR>
+
+                                                    </form>
+
+                                                </div><!--END OF GODDAMN DROPDOWN-->
+          <!--END OF NAV ITEM DROPDOWN 2-->
+          <!-- SEARCH BUTTON -->
+          <li class="nav-item dropdown">
+            <button class="nav-link btn btn-primary" type="submit" role="button">
+              Search
+            </button>
+          </li>
+        </ul><!--end of navbar mr-auto-->
+      </form>
+      
     </nav>
 
     <!--TEAM ITEMS CONTAINER-->
@@ -116,12 +160,6 @@
                 ></a>
               </li>
               
-
-              <!-- <li class="list-inline-item">
-                
-                  <a href="#" class="badge badge-info m-auto">Add Friend</a>
-                
-              </li> -->
             </ul>
 
             <!-- SKILLS BADGES -->
@@ -604,5 +642,14 @@
 
     <?php include('footer.php'); ?>
     <?php include('bootstrap_scripts.php'); ?>
+
+     <!--DROPDOWN MULTISELECT STUFF -->
+    <script>
+        $(function() {
+            $('.cq-dropdown').dropdownCheckboxes();
+        });
+    </script>
+    <script src="../resources/bootstrap_js/dropdownCheckboxes.min.js"></script>
+    
   </body>
 </html>

@@ -18,12 +18,11 @@ function deleteUserDB($data){
     $collectionName = "Users";
     $database = connectDB("KasraTabrizi", "codebook");
     $result = deleteOneDB($database,$collectionName,$data);
-    
 }
 
 //ADDS A COLLABORATOR
 function addCollaboratorDB(){
-    
+
 }
 
 //DELETES A COLLABORATOR
@@ -40,8 +39,10 @@ function createProject(){
 }
 
 //DELETES A PROJECT
-function deleteProject(){
-
+function deleteProject($data){
+    $collectionName = "Projects";
+    $database = connectDB("KasraTabrizi", "codebook");
+    $result = deleteOneDB($database,$collectionName,$data);
 }
 
 //ADD A PROJECT

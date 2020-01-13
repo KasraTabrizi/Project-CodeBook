@@ -14,7 +14,7 @@ function generateUser(){
 }
 
 //DELETES USERACCOUNT
-function deleteUserDB($data){
+function deleteUserDB($data){ 
     $collectionName = "Users";
     $database = connectDB("KasraTabrizi", "codebook");
     $result = deleteOneDB($database,$collectionName,$data);
@@ -48,6 +48,27 @@ function deleteProject($data){
 //ADD A PROJECT
 function addProject(){
 
+}
+
+//read all the projects IDs of the user 
+function getUserProjects($data){
+    $collectionName = "Users";
+    $database = connectDB("KasraTabrizi", "codebook");
+    $userProjectsId = readOneDB($database, $collectionName, $data);
+    return $userProjectsId;
+}
+
+//GENERATE ALL THE PROJECTS ON THE DASHBOARD PAGE FROM THE USER
+function generateProjectsUser($userProjectsId){
+    $data = array();
+    $projects = array();
+    $database = connectDB("KasraTabrizi", "codebook");
+    $collectionName = "Projects";
+    foreach($userProjectsId as $id){
+        $data = array("_id" => $id);
+        readOneDB($database, $collectionName, $data);
+    }
+    
 }
 
 //---------------------------------------------------------------

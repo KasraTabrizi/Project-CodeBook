@@ -86,25 +86,34 @@
 
                                     <!-- Tab panels -->
                                     <div class="tab-content">
-                                        <!--Panel 7-->
+                                        <!--Panel 7 LOGIN -->
                                         <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
 
                                             <!--Body-->
                                             <div class="modal-body mb-1">
-                                                <div class="md-form form-sm mb-5">
-                                                    <i class="fas fa-envelope prefix"></i>
-                                                    <input name="email_login" type="email" id="modalLRInput10" class="form-control form-control-sm validate">
-                                                    <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
-                                                </div>
+                                                <form id="login" method="post">
+                                                    <div class="md-form form-sm mb-5">
+                                                        <i class="fas fa-envelope prefix"></i>
+                                                        <input name="email_login" type="email" id="modalLRInput10" class="form-control form-control-sm validation" placeholder="someone@somewhere.com">
+                                                        <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                                                        <?php
+                                                        if (!empty($_POST['email_login'])) {
+                                                            echo $_POST['email_login'];
+                                                        } else {
+                                                            echo "<span class='is.invalid'>" . $error . "</span>";
+                                                        }
+                                                        ?>
+                                                    </div>
 
-                                                <div class="md-form form-sm mb-4">
-                                                    <i class="fas fa-lock prefix"></i>
-                                                    <input name="password_login" type="password" id="modalLRInput11" class="form-control form-control-sm validate">
-                                                    <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
-                                                </div>
-                                                <div class="text-center mt-2">
-                                                    <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
-                                                </div>
+                                                    <div class="md-form form-sm mb-4">
+                                                        <i class="fas fa-lock prefix"></i>
+                                                        <input name="password_login" type="password" id="modalLRInput11" class="form-control form-control-sm validate" placeholder="Password must be at least 5 characters">
+                                                        <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+                                                    </div>
+                                                    <div class="text-center mt-2">
+                                                        <button class="btn btn-info">Log in <i class="fas fa-sign-in ml-1"></i></button>
+                                                    </div>
+                                                </form>
                                             </div>
                                             <!--Footer-->
                                             <div class="modal-footer">
@@ -118,7 +127,7 @@
                                         </div>
                                         <!--/.Panel 7-->
 
-                                        <!--Panel 8-->
+                                        <!--Panel 8 REGISTER -->
                                         <div class="tab-pane fade" id="panel8" role="tabpanel">
 
                                             <!--Body-->

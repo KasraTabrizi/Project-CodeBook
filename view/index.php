@@ -1,3 +1,32 @@
+<?php 
+    if($_SERVER['REQUEST_METHOD'] === 'POST') {
+        var_dump($_POST);
+        exit;
+    }
+?>
+
+
+<?php
+
+    // if(....){   // if the login succeeds     
+
+    //     // if you need to do other things on successful login, do them here!
+
+    //     // send the user to another page
+    //     header("Location: http://www.google.com/");
+
+    //     // stop rendering the script on this page.
+    //     exit;
+        
+    // }
+
+?>
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +46,7 @@
 </head>
 
 <body>
+
 
     <!-- Main container-->
     <div class="container">
@@ -94,15 +124,48 @@
                                                 <form id="login" method="post">
                                                     <div class="md-form form-sm mb-5">
                                                         <i class="fas fa-envelope prefix"></i>
-                                                        <input name="email_login" type="email" id="modalLRInput10" class="form-control form-control-sm validation" placeholder="someone@somewhere.com">
-                                                        <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                                                        
                                                         <?php
-                                                        if (!empty($_POST['email_login'])) {
-                                                            echo $_POST['email_login'];
-                                                        } else {
-                                                            echo "<span class='is.invalid'>" . $error . "</span>";
+
+                                                        // THE SIMPLE APPROACH
+
+                                                        if(empty($_POST['email_login'])) {
+                                                            // normal textbox
+                                                            echo "<input name='email_login' type='email' id='modalLRInput10' class='form-control form-control-sm validation' placeholder='someone@somewhere.com'>";
                                                         }
+                                                        else {
+                                                            //filled in textbox
+                                                            if(filter_var($_POST['email_login'], FILTER_VALIDATE_EMAIL)) {
+                                                                echo "<input name='email_login' type='email' id='modalLRInput10' class='form-control form-control-sm validation' placeholder='someone@somewhere.com' value='" . $_POST['email_login'] .  "'>";
+
+                                                            } else {
+                                                                echo "<input name='email_login' type='email' id='modalLRInput10' class='form-control form-control-sm validation is-invalid' placeholder='someone@somewhere.com' value='" . $_POST['email_login'] .  "'>";
+
+                                                            }
+                                                        }
+
+                                                        // THE SLIGHTLY MORE COMPLEX APPROACH
+                                                        
+                                                        $loginName = "";
+                                                        $emailTextboxClassName = "";
+
+                                                        if(!empty($_POST['email_login'])) {
+                                                            $loginName = $_POST['email_login'];
+
+                                                            if(filter_var($_POST['email_login'], FILTER_VALIDATE_EMAIL)) {
+                                                                $invalidClass = "is-invalid";
+                                                            }
+                                                        }
+
+                                                        echo "<input name='email_login' type='email' id='modalLRInput10' class='form-control form-control-sm validation ". $invalidClass ."' placeholder='someone@somewhere.com' value='" . $loginName .  "'>";
+
+
+
                                                         ?>
+                                                        
+                                                        
+                                                        <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+                                                        
                                                     </div>
 
                                                     <div class="md-form form-sm mb-4">

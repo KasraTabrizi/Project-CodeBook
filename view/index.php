@@ -27,6 +27,25 @@
                     <div class="buttons-box">
                         <button type="button" class="btn btn-lg btn-outline-primary" data-toggle="modal" data-target="#modalRegister">Sign Up</button>
                         <button type="button" class="btn btn-lg btn-outline-warning" data-toggle="modal" data-target="#modalLogin">Login</button>
+
+                          <!-- Modal -->
+                        <div class="modal fade" id="modalRegister" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Modal Header</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                    <p>Some text in the modal.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -40,7 +59,7 @@
 
     <?php include('bootstrap_scripts.php'); ?>
     <script src="http://ricostacruz.com/jquery.transit/jquery.transit.js"></script>
-    <script>
+    <!-- <script>
         var background = {}
         background.initialize = function (){
             var $this = this;
@@ -100,7 +119,7 @@
             }
         background.initialize();
 
-    </script>
+    </script> -->
     <script src="../resources/bootstrap_js/dropdownCheckboxes.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <!--DROPDOWN MULTISELECT -->

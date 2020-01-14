@@ -4,7 +4,6 @@ body {
 body .landing_box {
   height: 100vh;
   position: absolute;
-  z-index: 999;
 }
 body .landing_box .row_box {
   position: absolute;

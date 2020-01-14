@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="../styles/search_collab.css" />
+    <link rel="stylesheet" href="../styles/css/search_collab.css" />
     <title>SEARCH FOR COLLABORATORS</title>
   </head>
   <body>

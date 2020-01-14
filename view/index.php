@@ -37,7 +37,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="../styles/style_index.css">
+    <link rel="stylesheet" href="../styles/css/style_index.css">
 
     <?php include('bootstrap_styles.php'); ?>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

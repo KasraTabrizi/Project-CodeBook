@@ -18,7 +18,7 @@
       integrity="sha256-l3FykDBm9+58ZcJJtzcFvWjBZNJO40HmvebhpHXEhC0="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../styles/search_project.css" />
+    <link rel="stylesheet" href="../styles/css/search_project.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.12/js/bootstrap-select.min.js"
       integrity="sha256-+o/X+QCcfTkES5MroTdNL5zrLNGb3i4dYdWPWuq6whY="

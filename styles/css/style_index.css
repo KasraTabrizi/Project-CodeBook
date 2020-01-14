@@ -1,7 +1,29 @@
 body {
-  color: black;
-  background-size: 100%;
-  background: url("../../images/background.jpg");
+  font-family: "Rubik", sans-serif;
+  background-color: whitesmoke;
+}
+body .landing_box {
+  height: 100vh;
+}
+body .landing_box .row_box {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  right: 50%;
+  height: 50%;
+  width: 70%;
+  margin: -15% 0 0 -25%;
+}
+body .landing_box .left_box_desc h1 {
+  font-size: 3.5em;
+  color: #0e9684;
+}
+body .landing_box .left_box_desc p {
+  font-size: 2em;
+  color: #13B5A0;
+}
+body .landing_box .right_box_logo img {
+  width: 550px;
 }
 
 /*# sourceMappingURL=style_index.css.map */

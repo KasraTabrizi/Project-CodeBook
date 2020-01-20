@@ -1,5 +1,5 @@
 <?php 
-
+    session_start();
     // define variables and initialize with empty values
     $projectName = $founder = $description = $url = "";
     $skills = array();
@@ -11,44 +11,62 @@
     //check whether the form has been submitted 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+    
         //check projectName
         if(empty($_POST['projectName'])){
-			$errors['projectName'] = 'Please fill in the projectName';
-		} else{
+            $errors['projectName'] = 'Please fill in the Projectname';
+            		} else{
 			$projectName = $_POST['projectName'];
-			if(!preg_match('/^[a-zA-Z\s0-9]+$/', $projectName)){
-				$errors['projectName'] = 'ProjectName must be letters or numbers';
+			if(!preg_match('/^[a-zA-Z0-9\s]+$/', $projectName)){
+				$errors['projectName'] = 'Projectname must be letters or numbers';
             }
+                $_SESSION['projectName']=$_POST['projectName'];
         }
 
+        //check foundername
         if (empty($_POST["founder"])) {
-            $founderErr = "Please fill in the foundername";
+            $errors['founder'] = "Please fill in the Foundername";
         }
         else {
-            $founder = $_POST["founder"];
+            $founder = $_POST['founder'];
+            if(!preg_match('/^[a-zA-Z\s]+$/', $founder)){
+                $errors['founder'] = 'Name must be letters or numbers';
+                $founder = $_POST["founder"];
+            }
+            $_SESSION['founder']=$_POST['founder'];
         }
 
-    if (empty($_POST["description"]))  {
-        $descriptionErr = "Please fill in the description";
-    }
-    else {
-        $description = $_POST["description"];
-    }
+         //check description  
+        if (empty(trim($_POST["description"])))  {
+            $errors['description'] = "Please give a description";
+        }
+        else {
+            $description = trim($_POST["description"]);
+            $_SESSION['description']= $description;
+        }
 
-    if (empty($_POST["url"]))  {
-        $urlErr = "Please fill in the url";
-    }
-    else {
-        $url = $_POST["url"];
-    }
+        //check URL 
+        if (empty($_POST["url"]))  {
+            $errors['url'] = "Please fill in the url";
+        }
+        else {
+            $url = trim($_POST["url"]);
+            if (!filter_var($url, FILTER_VALIDATE_URL)) {
+                $errors['url']="$url is not a valid URL";
+                $url = trim($_POST["url"]);
+                }
+            $_SESSION['url']=trim($_POST["url"]);
+            }
+        
 
-    if (!isset($_POST["skills"])) {
-        $skillsErr = "You must select 1 or more options";
+        //check skills
+        if (!isset($_POST["skills"])) {
+            $errors['skills'] = "You must select 1 or more options";
+        }
+        else {
+            $skills = $_POST["skills"];
+        }
     }
-    else {
-        $skills = $_POST["skills"];
-    }
-}
 
 ?>
 
@@ -87,17 +105,25 @@
         <div class="col-md-2 col-sm-1"></div>
         <div class="col-md-4">
             <label>Name Project</label>
+            <input type="text" class="form-control" name="projectName" value="<?php
+                                                                                if (!empty($_POST['projectName'])) {
+                                                                                    echo $_POST['projectName'];
+                                                                                } elseif (!empty($_SESSION['projectName'])) {
+                                                                                    echo $_SESSION['projectName'];
+                                                                                }?>">
+            <div class="text-danger small"><?php echo $errors['projectName']; ?></div>
             
-            <input type="text" class="form-control" name="projectName" value="<?php echo htmlspecialchars($projectName);?>" >
-            <div class="text-danger"><?php echo $errors['projectName']; ?></div>    
-        
         </div>
 
         <div class="col-md-4">
             <label>Name Founder</label>
-            <div class="input-group mb-3">
-            <input type="text" class="form-control" name="founder">
-            </div>
+            <input type="text" class="form-control" name="founder" value="<?php
+                                                                            if (!empty($_POST['founder'])) {
+                                                                                echo $_POST['founder'];
+                                                                            } elseif (!empty($_SESSION['founder'])) {
+                                                                                echo $_SESSION['founder'];
+                                                                            }?>">
+            <div class="text-danger small"><?php echo $errors['founder']; ?></div>
         </div>
         <div class="col-md-2 col-sm-1"></div>
     </div>        
@@ -107,9 +133,13 @@
         <div class="col-md-2 col-sm-1"></div>
         <div class="col-md-8">
             <label>Description</label>
-            <div class="input-group mb-3">
-            <textarea class="form-control" aria-label="With textarea" rows="4" cols="50" name="description"></textarea>
-            </div>
+            <textarea class="form-control" aria-label="With textarea" rows="4" cols="50" name="description"><?php
+                if (!empty($_POST['description'])) {
+                    echo $_POST['description'];
+                } elseif (!empty($_SESSION['description'])) {
+                    echo $_SESSION['description'];
+                }?></textarea>
+            <div class="text-danger small"><?php echo $errors['description']; ?></div>
         </div>
         <div class="col-md-2 col-sm-1"></div>        
     </div>
@@ -117,11 +147,15 @@
     <!--Github-->
     <div class="row form-group">
         <div class="col-md-2 col-sm-1"></div>
-    <div class="form-group col-md-8">
+        <div class="form-group col-md-8">
             <label>Github</label>
-            <div>
-            <input type="url" class="form-control" name="url">
-            </div> 
+            <input type="url" class="form-control" name="url" value="<?php
+                                                                        if (!empty($_POST['url'])) {
+                                                                            echo $_POST['url'];
+                                                                        } elseif (!empty($_SESSION['url'])) {
+                                                                            echo $_SESSION['url'];
+                                                                        }?>">
+             <div class="text-danger small"><?php echo $errors['url']; ?></div>
         </div>
         <div class="col-md-2 col-sm-1"></div>
     </div>

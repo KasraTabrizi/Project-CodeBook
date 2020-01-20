@@ -16,6 +16,13 @@
 
 </head>
 
+<?php
+
+    require "../model/model.php";
+
+?>
+
+
 <body>
     <!-- Main container-->
     <div class="container-fluid landing_box">
@@ -27,21 +34,129 @@
                     <div class="buttons-box">
                         <button type="button" class="btn btn-lg btn-outline-primary" data-toggle="modal" data-target="#modalRegister">Sign Up</button>
                         <button type="button" class="btn btn-lg btn-outline-warning" data-toggle="modal" data-target="#modalLogin">Login</button>
-
-                          <!-- Modal -->
+                        <!-- Modal Registration-->
                         <div class="modal fade" id="modalRegister" role="dialog">
                             <div class="modal-dialog">
                                 <!-- Modal content-->
                                 <div class="modal-content">
-                                    <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h4 class="modal-title">Modal Header</h4>
-                                    </div>
+                                    <!-- <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Modal Header</h4>
+                                    </div> -->
                                     <div class="modal-body">
-                                    <p>Some text in the modal.</p>
+                                        <form name="my-form" action="" method="">
+                                            <div class="form-group row">
+                                                <label for="first_name" class="col-md-4 col-form-label text-md-right">First Name</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="first_name" class="form-control" name="first-name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="last_name" class="col-md-4 col-form-label text-md-right">Last Name</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="last-name" class="form-control" name="last-name">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="job-title" class="col-md-4 col-form-label text-md-right">Job Title</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="job-title" class="form-control" name="job-title">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="email_address" class="form-control" name="email-address">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                                                <div class="col-md-6">
+                                                    <input type="password" id="password" class="form-control" name="password">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="password-repeat" class="col-md-4 col-form-label text-md-right">Password Repeat</label>
+                                                <div class="col-md-6">
+                                                    <input type="password" id="password-repeat" class="form-control" name="password-repeat">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="github" class="col-md-4 col-form-label text-md-right">Github</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="github" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="avatar" class="col-md-4 col-form-label text-md-right">Avatar</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="avatar" class="form-control">
+                                                </div>
+                                            </div>
+                                            <?php
+                                                 $username = "KasraTabrizi";
+                                                 $password = "codebook";
+                                                 $database = connectDB($username, $password);
+                                                 generateSkillsToCheckBoxes($database, "Skills", "frontend");
+                                                 generateSkillsToCheckBoxes($database, "Skills", "backend");
+                                                 generateSkillsToCheckBoxes($database, "Skills", "database");
+                                                 generateSkillsToCheckBoxes($database, "Skills", "CMS");
+                                            ?>
+                                            <div class="col-md-6 offset-md-4">
+                                                <button type="submit" class="btn btn-primary">
+                                                Register
+                                                </button>
+                                            </div>
+                                        </form>
                                     </div>
                                     <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal Login-->
+                        <div class="modal fade" id="modalLogin" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <!-- <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Modal Header</h4>
+                                    </div> -->
+                                    <div class="modal-body">
+                                        
+                                    <form name="my-form" action="" method="">
+                                            <div class="form-group row">
+                                                <label for="full_name" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="full_name" class="form-control" name="full-name">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="email_address" class="col-md-4 col-form-label text-md-right">Password</label>
+                                                <div class="col-md-6">
+                                                    <input type="text" id="email_address" class="form-control" name="email-address">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 offset-md-4">
+                                                <button type="submit" class="btn btn-primary">
+                                                Login
+                                                </button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>

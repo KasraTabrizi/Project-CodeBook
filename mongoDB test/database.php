@@ -14,7 +14,9 @@
         $password = "codebook";
         $collections = array("users" => "Users", "skills" => "Skills", "project" => "Projects");
         $usersKey = array("email", "password", "first_name", "last_name", "job_title", "github", "profile_image", "skills", "collaborators", "projects", "created_at");
-        $skillsKey = array("skill", "icon-image");
+        $skillsKey = array("skill","categorie","icon-image");
+        $skillsCategorie = array("frontend","frontend","frontend","frontend","frontend","frontend","frontend","frontend","frontend","frontend","frontend","backend","backend"
+                                ,"backend","backend","backend","backend","backend","backend","database", "database", "database", "CMS");
         $skillName = array("HTML","CSS", "Sass","Bootstrap","Tailwind","Javascript","jQuery","Typescript","Vue.js","React.js","Angular"
                            ,"Node.js","PHP", "Laravel","Python","WebPack","Django","Flask","Ruby","MySQL","MongoDB","PostgreSQL", "Drupal");
         $skillIconImage = array("https://img.icons8.com/dusk/48/000000/html-5.png", 
@@ -120,8 +122,7 @@
 
         //TEST CONNECTION TO DATABASE
         $database = connectDB($username, $password);
-
-        // $collection = $database->CodeBook->Skills;
+        //$collection = $database->CodeBook->Skills;
         // var_dump($collection->getIndex());
 
         //TEST INSERT
@@ -129,9 +130,9 @@
         // $result = createOneDB($database, $collections['skills'], $data);
         // var_dump($result);
 
-        //CREATE ALL THE SKILL AND ICON IMAGE DOCUMENTS IN THE SKILLS COLLECTION
+        //CREATE ALL THE SKILL, CATEGORIE, ICON IMAGE DOCUMENTS IN THE SKILLS COLLECTION
         // for($i = 0; $i < count($skillName); $i++){
-        //     $data = array("skill" => $skillName[$i], "icon-image" => $skillIconImage[$i]);
+        //     $data = array("skill" => $skillName[$i], "categorie" => $skillsCategorie[$i], "icon-image" => $skillIconImage[$i]);
         //     $result = createOneDB($database, $collections['skills'], $data);
         // }
 

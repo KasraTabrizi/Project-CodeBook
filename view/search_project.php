@@ -1,3 +1,11 @@
+<?php 
+echo var_dump($_POST);
+if(isset($_POST['submit'])){
+  if(empty($_POST['skills']) && empty($_POST['collabs'])){
+    echo 'Please choose at least one skill';
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -52,64 +60,66 @@
 
       <!--SKILLS SEARCH DROPDOWN-->
       
-      <form action="" method="POST" class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        
+      <form method="POST" action="search_project.php" class='myform'> 
+      <ul class="navbar-nav mr-auto">
           <!--dropdown SKILLS 1-->
           <li class="nav-item dropdown">
             <!--NAV ITEM DROPDOWN 1-->
           
             <!-- THE GODDAMN SKILL DROPDOWN -->
-                                                <div class="md-form form-sm mb-0 mr-3">
-                                                    <form class='myform'>
+            
+                  <div class="md-form form-sm mb-0 mr-3">
+                                                    
+                      <div class="dropdown cq-dropdown" data-name='statuses'>
+                           <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="btndropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                               Skills
+                                 <span class="caret"></span>
+                           </button>
+                             <ul class="dropdown-menu" aria-labelledby="btndropdown">
+                           <li>
+                   <label class="radio-btn">
+                              <input type="checkbox" name="skills[]" value='jQuery' >
+                              jQuery
+                    </label>
+                      </li>
+                          <li>
+                          <label class="radio-btn">
+                            <input type="checkbox" name="skills[]" value='Bootstrap'>
+                              Bootstrap
+                          </label>
+                           </li>
+                             <li>
+                              <label class="radio-btn">
+                                <input type="checkbox" name="skills[]" value='HTML'>
+                                   HTML
+                                     </label>
+                                   </li>
+                                  <li>
+                                    <label class="radio-btn">
+                                     <input type="checkbox" name="skills[]" value='JavaScript' >
+                                       JavaScript
+                                     </label>
+                                    </li>
+                                      <li>
+                                      <label class="radio-btn">
+                                      <input type="checkbox" name="skills[]" value='CSS' >
+                                        CSS
+                                         </label>
+                                      </li>
+                                        <li class='text-center'>
+                                      <button type='button' class='btn btn-xs btn-danger clear close-dropdown' value='Clear'>Clear</button>
+                                       <button type='button' class='btn btn-xs btn-success save' value='Save'>Save</button>
+                                        </li>
+                           </ul>
+                       </div>
 
-                                                        <div class="dropdown cq-dropdown" data-name='statuses'>
-                                                            <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="btndropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                                                Skills
-                                                                <span class="caret"></span>
-                                                            </button>
-                                                            <ul class="dropdown-menu" aria-labelledby="btndropdown">
-                                                                <li>
-                                                                    <label class="radio-btn">
-                                                                        <input type="checkbox" value='jQuery' checked>
-                                                                        jQuery
-                                                                    </label>
-                                                                </li>
-                                                                <li>
-                                                                    <label class="radio-btn">
-                                                                        <input type="checkbox" value='Bootstrap'>
-                                                                        Bootstrap
-                                                                    </label>
-                                                                </li>
-                                                                <li>
-                                                                    <label class="radio-btn">
-                                                                        <input type="checkbox" value='HTML'>
-                                                                        HTML
-                                                                    </label>
-                                                                </li>
-                                                                <li>
-                                                                    <label class="radio-btn">
-                                                                        <input type="checkbox" value='JavaScript' checked>
-                                                                        JavaScript
-                                                                    </label>
-                                                                </li>
-                                                                <li>
-                                                                    <label class="radio-btn">
-                                                                        <input type="checkbox" value='CSS' checked>
-                                                                        CSS
-                                                                    </label>
-                                                                </li>
-                                                                <li class='text-center'>
-                                                                    <button type='button' class='btn btn-xs btn-danger clear close-dropdown' value='Clear'>Clear</button>
-                                                                    <button type='button' class='btn btn-xs btn-success save' value='Save'>Save</button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
+         <BR>
 
-                                                        <BR>
+                                                    
 
-                                                    </form>
-
-                                                </div><!--END OF GODDAMN DROPDOWN-->
+             </div><!--END OF GODDAMN DROPDOWN-->
               
             
           </li>
@@ -118,9 +128,9 @@
           <!--dropdown AMOUNT COLLABORATORS-->
           <li class="nav-item dropdown">
             <!--NAV ITEM DROPDOWN 2-->
-                   <!-- THE GODDAMN SKILL DROPDOWN -->
+                
                                                 <div class="md-form form-sm mb-0 mr-3">
-                                                    <form class='myform'>
+                                                    <div class='myform'>
 
                                                         <div class="dropdown cq-dropdown" data-name='statuses'>
                                                             <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="btndropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -130,32 +140,32 @@
                                                             <ul class="dropdown-menu" aria-labelledby="btndropdown">
                                                                 <li>
                                                                     <label class="radio-btn">
-                                                                        <input type="checkbox" value='1-5' checked>
-                                                                        1-5
+                                                                        <input type="checkbox" name="collabs[]" value='1-5' >
+                                                                        1-5 collaborators
                                                                     </label>
                                                                 </li>
                                                                 <li>
                                                                     <label class="radio-btn">
-                                                                        <input type="checkbox" value='5-10'>
-                                                                        5-10
+                                                                        <input type="checkbox" name="collabs[]" value='5-10'>
+                                                                        5-10 collaborators
                                                                     </label>
                                                                 </li>
                                                                 <li>
                                                                     <label class="radio-btn">
-                                                                        <input type="checkbox" value='10-25'>
-                                                                        10-25
+                                                                        <input type="checkbox" name="collabs[]" value='10-25'>
+                                                                        10-25 collaborators
                                                                     </label>
                                                                 </li>
                                                                 <li>
                                                                     <label class="radio-btn">
-                                                                        <input type="checkbox" value='25-50' checked>
-                                                                        25-50
+                                                                        <input type="checkbox" name="collabs[]" value='25-50' >
+                                                                        25-50 collaborators
                                                                     </label>
                                                                 </li>
                                                                 <li>
                                                                     <label class="radio-btn">
-                                                                        <input type="checkbox" value='> 50' checked>
-                                                                        > 50
+                                                                        <input type="checkbox" name="collabs[]" value='> 50' >
+                                                                        > 50 collaborators
                                                                     </label>
                                                                 </li>
                                                                 <li class='text-center'>
@@ -167,18 +177,21 @@
 
                                                         <BR>
 
-                                                    </form>
+                                                    </div>
 
                                                 </div><!--END OF GODDAMN DROPDOWN-->
+                                                
           <!--END OF NAV ITEM DROPDOWN 2-->
           <!-- SEARCH BUTTON -->
           <li class="nav-item dropdown">
-            <button class="nav-link btn btn-primary" type="submit" role="button">
+            <button class="nav-link btn btn-primary" name="submit" type="submit" value="search" role="button">
               Search
             </button>
           </li>
+          
         </ul><!--end of navbar mr-auto-->
       </form>
+      </div>
       
     </nav>
 

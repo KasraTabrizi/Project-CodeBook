@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 
       <!--brand logo-->
-      <a class="navbar-brand" href="index.php">CodeBook</a>
+      <a class="navbar-brand" href="dashboard.php">CodeBook</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -14,7 +14,7 @@
         
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.php">Home</a>
+            <a class="nav-link" href="dashboard.php">Home</a>
           </li>
 
       <!--dropdown Projects-->
@@ -45,7 +45,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Log out</a>
+            <a class="nav-link" href="index.php">Log out</a>
           </li>
               
           </ul>

@@ -9,7 +9,8 @@
 <body>
     <?php
         // This path should point to Composer's autoloader
-        require 'C://Users/kasra/vendor/autoload.php';
+        require '../vendor/autoload.php';
+        
         $username = "KasraTabrizi";
         $password = "codebook";
         $collections = array("users" => "Users", "skills" => "Skills", "project" => "Projects");

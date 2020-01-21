@@ -89,6 +89,7 @@ function generateUsers()
 
     //asign 2 random projects to users
 
+    
     //asign random collaborators as friends for users
 
     //then add the right users to those projects

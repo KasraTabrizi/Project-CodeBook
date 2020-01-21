@@ -17,9 +17,7 @@
 </head>
 
 <?php
-
     require "../model/model.php";
-
 ?>
 
 

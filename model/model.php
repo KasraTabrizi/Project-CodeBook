@@ -1,6 +1,6 @@
 <?php
 
-    require "../MongoDB test/database.php";
+    require "../mongoDB test/database.php";
 
 
 // function createButton(){
@@ -16,7 +16,7 @@
 function createUserDB($data){
     $collectionName = "Users";
     $database = connectDB("KasraTabrizi", "codebook");
-    $user_id = reateOneDB($database, $collectionName, $data);
+    $user_id = createOneDB($database, $collectionName, $data);
 }
 
 function generateUser(){

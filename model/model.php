@@ -1,13 +1,14 @@
 <?php
 
     require "../mongoDB test/database.php";
-
+    
+    session_start();
 
 //LOGIN RELATED FUNCTIONS
 
 //checks if user exists in DB, if so return its ID
 function checkUserLogin(){
-    
+
 }
 
 //---------------------------------------------------------------

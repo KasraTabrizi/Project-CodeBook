@@ -2,14 +2,6 @@
 
     require "../mongoDB test/database.php";
 
-
-// function createButton(){
-//     $buttonNames = array("button1","button2","button3","button4","button5",);
-//     for($i = 0; $i < count($buttonNames); $i++){
-//         echo '<button type="button" class="btn btn-lg btn-outline-success" data-toggle="modal" data-target="#modalLogin">'.$buttonNames[$i].'</button>';
-//     }
-// }    
-
 //USER RELATED FUNCTIONS
 
 //CREATES A NEW USER IN DATABASE WHEN REGISTERED

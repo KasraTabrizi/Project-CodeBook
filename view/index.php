@@ -20,7 +20,6 @@
     require "../model/model.php";
 ?>
 
-
 <body>
     <!-- Main container-->
     <div class="container-fluid landing_box">
@@ -133,16 +132,16 @@
                                         
                                     <form name="my-form" action="" method="">
                                             <div class="form-group row">
-                                                <label for="full_name" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                                                <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
                                                 <div class="col-md-6">
-                                                    <input type="text" id="full_name" class="form-control" name="full-name">
+                                                    <input type="text" id="email" class="form-control" name="email">
                                                 </div>
                                             </div>
 
                                             <div class="form-group row">
-                                                <label for="email_address" class="col-md-4 col-form-label text-md-right">Password</label>
+                                                <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
                                                 <div class="col-md-6">
-                                                    <input type="text" id="email_address" class="form-control" name="email-address">
+                                                    <input type="password" id="password" class="form-control" name="password">
                                                 </div>
                                             </div>
                                             <div class="col-md-6 offset-md-4">

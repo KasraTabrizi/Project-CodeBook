@@ -33,11 +33,6 @@ function generateUserProfile(){
 
 }
 
-//GENERATE USER PROJECTS ON THE PAGE
-function generateUserProjects(){
-
-}
-
 //GENERATE USER COLLABORATORS ON THE PAGE
 function generateUserCollabs(){
 
@@ -46,12 +41,12 @@ function generateUserCollabs(){
 //---------------------------------------------------------------
 //PROJECT RELATED FUNCTIONS
 
-//CREATES A NEW PROJECT
+//CREATES A NEW PROJECT TO DB
 function createProject(){
 
 }
 
-//DELETES A PROJECT
+//DELETES A PROJECT FROM DB
 function deleteProject($data){
     $collectionName = "Projects";
     $database = connectDB("KasraTabrizi", "codebook");
@@ -72,7 +67,7 @@ function getUserProjects($data){
 }
 
 //GENERATE ALL THE PROJECTS ON THE DASHBOARD PAGE FROM THE USER
-function generateProjectsUser($userProjectsId){
+function generateUserProjects($userProjectsId){
     $data = array();
     $projects = array();
     $database = connectDB("KasraTabrizi", "codebook");

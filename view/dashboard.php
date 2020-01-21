@@ -27,18 +27,21 @@
             $database = connectDB($username, $password);
 
             //retrieve the user data from the DB
-            $data = array("email" => "Tabitha@kane.com");
+            $data = array("email" => "Sander@kane.com");
             $result = readOneDB($database, "Users", $data);
 
             //generate the profile card
             generateUserProfile($result, $database);
         ?>
-            <hr class="d-sm-none">
-
+        <hr class="d-sm-none">
             <!-- PROJECTS -->
             <div class="col-xl-4 col-sm-12 col-md-8">
                 <h2>Projects</h2>
+            <?php
 
+
+
+            ?>
                 <!-- PROJECT LIST ITEM -->
                 <div class="container-fluid resultsContainer">
                     <div class="row resultsChild">

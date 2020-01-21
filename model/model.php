@@ -11,24 +11,35 @@ function createUserDB($data){
     $user_id = createOneDB($database, $collectionName, $data);
 }
 
-function generateUser(){
-
-}
-
-//DELETES USERACCOUNT
+//DELETES USERACCOUNT FROM DB
 function deleteUserDB($data){ 
     $collectionName = "Users";
     $database = connectDB("KasraTabrizi", "codebook");
     $result = deleteOneDB($database,$collectionName,$data);
 }
 
-//ADDS A COLLABORATOR
+//ADDS A COLLABORATOR TO DB
 function addCollaboratorDB(){
 
 }
 
-//DELETES A COLLABORATOR
+//DELETES A COLLABORATOR FROM DB
 function deleteCollaboratorDB(){
+
+}
+
+//GENERATE USER PROFILE CARD ON THE PAGE
+function generateUserProfile(){
+
+}
+
+//GENERATE USER PROJECTS ON THE PAGE
+function generateUserProjects(){
+
+}
+
+//GENERATE USER COLLABORATORS ON THE PAGE
+function generateUserCollabs(){
 
 }
 

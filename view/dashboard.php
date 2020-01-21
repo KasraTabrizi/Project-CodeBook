@@ -11,36 +11,28 @@
     <?php include('bootstrap_styles.php'); ?>
 </head>
 
+<?php
+    require "../controller/controller.php";
+?>
+
 <body>
     <?php include('header.php'); ?>
     <!-- WHOLE PAGE CONTAINER -->
     <div class="container-fluid" style="margin-top:30px">
         <div class="row">
 
-            <!-- PROFILE 'CARD' -->
-            <div class="col-xl-4 col-sm-12 col-md-8 text-center mt-5">
-                <div class="bg-white rounded shadow-sm py-5 px-4">
-                    <img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" alt="" />
-                    <h5 class="mb-0">Nathalie Pillen</h5>
-                    <span class="small text-uppercase text-muted">CEO - Founder</span>
-                    <ul class="social mb-0 list-inline mt-3">
-                        <li class="list-inline-item">
-                            <a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- END OF PROFILE 'CARD' -->
+        <?php
+            $username = "KasraTabrizi";
+            $password = "codebook";
+            $database = connectDB($username, $password);
 
+            //retrieve the user data from the DB
+            $data = array("email" => "Tabitha@kane.com");
+            $result = readOneDB($database, "Users", $data);
+
+            //generate the profile card
+            generateUserProfile($result, $database);
+        ?>
             <hr class="d-sm-none">
 
             <!-- PROJECTS -->

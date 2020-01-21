@@ -46,8 +46,44 @@ function deleteCollaboratorDB(){
 }
 
 //GENERATE USER PROFILE CARD ON THE PAGE
-function generateUserProfile(){
-
+function generateUserProfile($user, $database){
+      echo '<div class="col-xl-4 col-sm-12 col-md-8 text-center mt-5">';
+      echo '<div class="bg-white rounded shadow-sm py-5 px-4">';
+      echo '<img src='.$user->profile_image.' width="150" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" alt="" />';
+      echo '<h5 class="mb-0">'.$user->first_name.' '.$user->last_name.'</h5>';
+      echo '<span class="small text-uppercase text-muted">'.$user->job_title.'</span>';
+      echo <<<EOT
+            <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item">
+                    <a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="social-link"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>
+            EOT;
+    echo '<ul class="social mb-0 list-inline mt-3">';
+    foreach($user->skills as $skill){
+        $data = array("_id" => new MongoDB\BSON\ObjectId($skill));
+        $result = readOneDB($database, "Skills", $data);
+        $iconImageLink = $result['icon-image'];
+        echo <<<EOT
+            <li class="list-inline-item">
+                <img src=$iconImageLink alt="">
+            </li>
+        EOT;
+    }
+    echo <<<EOT
+        </ul>
+        </div>
+        </div>
+        EOT;
 }
 
 //GENERATE USER COLLABORATORS ON THE PAGE

@@ -2,6 +2,22 @@
 
     require "../mongoDB test/database.php";
 
+
+//LOGIN RELATED FUNCTIONS
+
+//checks if user exists in DB, if so return its ID
+function checkUserLogin(){
+    
+}
+
+//---------------------------------------------------------------
+//REGISTRATION RELATED FUNCTIONS
+
+//registers een new user into the DB
+function registerUser(){
+
+}
+
 //USER RELATED FUNCTIONS
 
 //CREATES A NEW USER IN DATABASE WHEN REGISTERED
@@ -136,6 +152,5 @@ function showAllCollaborators(){
 function filterCollaborators(){
     
 }
-
 
 ?>

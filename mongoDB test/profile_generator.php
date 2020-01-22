@@ -36,60 +36,93 @@ function generateUsers()
     $database = connectDB($username, $password);
 
     //generate users
-    for ($i = 0; $i < 5; $i++) {
-        $fname = randomGen($first_name);
-        $mail = $fname . $email;
-        $data_users['email'] = $mail;
-        $data_users['password'] = password_hash($password, PASSWORD_DEFAULT);
-        $data_users['first_name'] = $fname;
-        $data_users['last_name'] = randomGen($last_name);
-        $data_users['job_title'] = randomGen($job_title);
-        $data_users['github'] = $github;
-        $data_users['profile_image'] = $profile_image;
-        //generate skills
-        for($j = 0; $j < 5; $j++){
-            $randomId = generateSkills($database);
-            if(checkDuplicateSkill($users_skills, $randomId)){
-                array_push($users_skills,$randomId);
-            }
-        }
-        $data_users['skills'] = $users_skills;
-        $users_skills = array();
-        $data_users['collaborators'] = array();
-        $data_users['projects'] = array();
-        $data_users['friends_request'] = array();
-        $data_users['created_at'] = $created_at;
-        //Add to Database
-        $user_id_new = createOneDB($database, "Users", $data_users);
-        //add the user id to an array for later use in projects
-        array_push($user_ids, getIdString($user_id_new));
-    }
+    // for ($i = 0; $i < 5; $i++) {
+    //     $fname = randomGen($first_name);
+    //     $mail = $fname . $email;
+    //     $data_users['email'] = $mail;
+    //     $data_users['password'] = password_hash($password, PASSWORD_DEFAULT);
+    //     $data_users['first_name'] = $fname;
+    //     $data_users['last_name'] = randomGen($last_name);
+    //     $data_users['job_title'] = randomGen($job_title);
+    //     $data_users['github'] = $github;
+    //     $data_users['profile_image'] = $profile_image;
+    //     //generate skills
+    //     for($j = 0; $j < 5; $j++){
+    //         $randomId = generateSkills($database);
+    //         if(checkDuplicateSkill($users_skills, $randomId)){
+    //             array_push($users_skills,$randomId);
+    //         }
+    //     }
+    //     $data_users['skills'] = $users_skills;
+    //     $users_skills = array();
+    //     $data_users['collaborators'] = array();
+    //     $data_users['projects'] = array();
+    //     $data_users['friends_request'] = array();
+    //     $data_users['created_at'] = $created_at;
+    //     //Add to Database
+    //     $user_id_new = createOneDB($database, "Users", $data_users);
+    //     //add the user id to an array for later use in projects
+    //     array_push($user_ids, getIdString($user_id_new));
+    // }
 
     //generate projects
-    for($i = 0; $i < 5; $i++){
-        $data_projects['title'] = randomGen($project_title);
-        $data_projects['description'] = $project_description;
-        $data_projects['github'] = $github;
-        //generate skills
-        for($j = 0; $j < 3; $j++){
-            $randomId = generateSkills($database);
-            if(checkDuplicateSkill($project_skills, $randomId)){
-                array_push($project_skills,$randomId);
-            }
-        }
-        $data_projects['skills'] = $project_skills;
-        $project_skills = array();
-        $data_projects['number_of_collaborators'] = randomGen($num_collabs);
-        $data_projects['collaborators'] = array();
+    // for($i = 0; $i < 5; $i++){
+    //     $data_projects['title'] = randomGen($project_title);
+    //     $data_projects['description'] = $project_description;
+    //     $data_projects['github'] = $github;
+    //     //generate skills
+    //     for($j = 0; $j < 3; $j++){
+    //         $randomId = generateSkills($database);
+    //         if(checkDuplicateSkill($project_skills, $randomId)){
+    //             array_push($project_skills,$randomId);
+    //         }
+    //     }
+    //     $data_projects['skills'] = $project_skills;
+    //     $project_skills = array();
+    //     $data_projects['number_of_collaborators'] = randomGen($num_collabs);
+    //     $data_projects['collaborators'] = array();
 
-        $project_id_new = createOneDB($database, "Projects", $data_projects);
-        //add the project id to an array for later use in projects
-        array_push($project_ids, getIdString($project_id_new));
-    }
+    //     $project_id_new = createOneDB($database, "Projects", $data_projects);
+    //     //add the project id to an array for later use in projects
+    //     array_push($project_ids, getIdString($project_id_new));
+    // }
 
     //asign 2 random projects to users
-
     
+    //take two random project ID from the project collection and store it in an array that is stored in the projects document of each user
+    //count the amount of users there are in the Users collection
+    // $userCount = collectionLength($database,"Users");
+
+    // for($i = 0; $i < $userCount; $i++){
+    //     $twoProjects = array();
+    //     $data = array("projects" => array());
+    //     $setArray = array();
+    //     //get two random projects and store them in an array
+    //     for($i = 0; $i < 2; $i++){
+    //         $randomId = generateRandomProjects($database);
+    //         array_push($twoProjects, $randomId);
+    //     }
+    //     $setArray = array("projects" => $twoProjects);
+    //     $result = updateManyDB($database,"Users",$data, $setArray);
+    // }
+
+    $collection = $database->CodeBook->Users;
+    $cursor = $collection->find();
+
+    foreach ($cursor as $doc) {
+        var_dump($doc);
+        $twoProjects = array();
+        $data = array("projects" => array());
+        $setArray = array();
+        //get two random projects and store them in an array
+        for($i = 0; $i < 2; $i++){
+            $randomId = generateRandomProjects($database);
+            array_push($twoProjects, $randomId);
+        }
+        $setArray = array("projects" => $twoProjects);
+        $result = updateDB($database,"Users",$data, $setArray);
+    }
+
     //asign random collaborators as friends for users
 
     //then add the right users to those projects
@@ -98,8 +131,22 @@ function generateUsers()
 
     echo "DONE";
 }
-//function that generates random skills
+//generate random skills
 function generateSkills($database){
+    $result = randomDocument($database, "Skills", "icon-image", "https");
+    foreach($result as $item){
+        return getIdString($item["_id"]);
+    }
+}
+//generate random projects
+function generateRandomProjects($database){
+    $result = randomDocument($database, "Projects", "github", "https");
+    foreach($result as $item){
+        return getIdString($item["_id"]);
+    }
+}
+//generate random Users
+function generateRandomUsers($database){
     $result = randomDocument($database, "Skills", "icon-image", "https");
     foreach($result as $item){
         return getIdString($item["_id"]);

@@ -81,6 +81,20 @@
             return $result;
         }
 
+        //UPDATE MANY DOCUMENTS IN A COLLECTION
+        function updateManyDB($database,$collectionName,$data,$newData){
+            $collection = $database->CodeBook->$collectionName;
+            $result = $collection->updateMany($data, ['$set' => $newData]);
+            return $result;
+        }
+
+        //UPDATE DOCUMENTS IN A COLLECTION
+        function updateDB($database,$collectionName,$data,$newData){
+            $collection = $database->CodeBook->$collectionName;
+            $result = $collection->update($data, ['$set' => $newData]);
+            return $result;
+        }
+
         //DELETE A DOCUMENT FROM A COLLECTION
         function deleteOneDB($database,$collectionName,$data){
             $collection = $database->CodeBook->$collectionName;
@@ -109,7 +123,7 @@
         //GET A RANDON DOCUMENT FROM A COLLECTION
         function randomDocument($database, $collectionName, $fieldName, $keyWord){
             $data = array($fieldName => new MongoDB\BSON\Regex("^".$keyWord, 'i'));
-            $collection = $database->CodeBook->Skills;
+            $collection = $database->CodeBook->Projects;
             $lenCollection = $collection->count();
             $result = $collection->find(
                 $data,

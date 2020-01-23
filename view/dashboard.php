@@ -27,7 +27,7 @@
             $database = connectDB($username, $password);
 
             //retrieve the user data from the DB
-            $data = array("email" => "David@kane.com");
+            $data = array("email" => "Thijs@kane.com");
             $result = readOneDB($database, "Users", $data);
 
             //generate the profile card

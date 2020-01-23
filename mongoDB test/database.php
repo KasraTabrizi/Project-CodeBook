@@ -123,7 +123,7 @@
         //GET A RANDON DOCUMENT FROM A COLLECTION
         function randomDocument($database, $collectionName, $fieldName, $keyWord){
             $data = array($fieldName => new MongoDB\BSON\Regex("^".$keyWord, 'i'));
-            $collection = $database->CodeBook->Projects;
+            $collection = $database->CodeBook->Users;
             $lenCollection = $collection->count();
             $result = $collection->find(
                 $data,
@@ -136,7 +136,7 @@
         }
 
         //TEST CONNECTION TO DATABASE
-        $database = connectDB($username, $password);
+        //$database = connectDB($username, $password);
         //$collection = $database->CodeBook->Skills;
         // var_dump($collection->getIndex());
 

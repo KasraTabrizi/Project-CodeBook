@@ -27,7 +27,7 @@
             $database = connectDB($username, $password);
 
             //retrieve the user data from the DB
-            $data = array("email" => "Aline@kane.com");
+            $data = array("email" => "David@kane.com");
             $result = readOneDB($database, "Users", $data);
 
             //generate the profile card
@@ -38,62 +38,8 @@
             <div class="col-xl-4 col-sm-12 col-md-8">
                 <h2>Projects</h2>
             <?php
-
-
-
+                generateUserProjects($result, $database);
             ?>
-                <!-- PROJECT LIST ITEM -->
-                <div class="container-fluid resultsContainer">
-                    <div class="row resultsChild">
-                        <div class="col col-8">
-                            <div class="row">TITLE PROJECT</div>
-                            <div class="row">
-                                <div>
-                                    <header>DESCRIPTION</header>
-                                </div>
-                                <div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                        Maiores, itaque.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">COLLABORATORS</div>
-                            <div class="row">SKILLS</div>
-                        </div>
-                        <div class="col col-4">
-                            <button class="btn btn-primary btnGithub">GITHUB</button>
-                        </div>
-                    </div>
-                </div>
-                <!--END OF PROJECT LIST ITEM-->
-
-                <!-- PROJECT LIST ITEM -->
-                <div class="container-fluid resultsContainer">
-                    <div class="row resultsChild">
-                        <div class="col col-8">
-                            <div class="row">TITLE PROJECT</div>
-                            <div class="row">
-                                <div>
-                                    <header>DESCRIPTION</header>
-                                </div>
-                                <div>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                        Maiores, itaque.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">COLLABORATORS</div>
-                            <div class="row">SKILLS</div>
-                        </div>
-                        <div class="col col-4">
-                            <button class="btn btn-primary btnGithub">GITHUB</button>
-                        </div>
-                    </div>
-                </div>
-                <!--END OF PROJECT LIST ITEM-->
-
             </div>
             <!-- END OF PROJECTS -->
 
@@ -102,78 +48,10 @@
                 <h2>Collaborators</h2>
                 <div class="row">
                     <!-- COLLABORATOR LIST ITEM -->
-                    <div class="col-xl-4 col-sm-12 col-md-8 text-center mt-5">
-                        <div class="bg-white rounded shadow-sm py-5 px-4">
-                            <img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" alt="" />
-                            <h5 class="mb-0">Nathalie Pillen</h5>
-                            <span class="small text-uppercase text-muted">CEO - Founder</span>
-                            <div class="col-4">
-                                <button class="btn btn-light btnProfile">Profile</button>
-                            </div>
-                        </div>
-                    </div>
+                    <?php
+                        generateUserCollabs($result, $database);
+                    ?>
                     <!-- END OF COLLABORATOR LIST ITEM -->
-
-                    <!-- COLLABORATOR LIST ITEM -->
-                    <div class="col-xl-4 col-sm-12 col-md-8 text-center mt-5">
-                        <div class="bg-white rounded shadow-sm py-5 px-4">
-                            <img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" alt="" />
-                            <h5 class="mb-0">Nathalie Pillen</h5>
-                            <span class="small text-uppercase text-muted">CEO - Founder</span>
-                            <div class="col-4">
-                                <button class="btn btn-light btnProfile">Profile</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END OF COLLABORATOR LIST ITEM -->
-                    <!-- COLLABORATOR LIST ITEM -->
-                    <div class="col-xl-4 col-sm-12 col-md-8 text-center mt-5">
-                        <div class="bg-white rounded shadow-sm py-5 px-4">
-                            <img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" alt="" />
-                            <h5 class="mb-0">Nathalie Pillen</h5>
-                            <span class="small text-uppercase text-muted">CEO - Founder</span>
-                            <div class="col-4">
-                                <button class="btn btn-light btnProfile">Profile</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END OF COLLABORATOR LIST ITEM -->
-                    <div class="col-xl-4 col-sm-12 col-md-8 text-center mt-5">
-                        <div class="bg-white rounded shadow-sm py-5 px-4">
-                            <img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" alt="" />
-                            <h5 class="mb-0">Nathalie Pillen</h5>
-                            <span class="small text-uppercase text-muted">CEO - Founder</span>
-                            <div class="col-4">
-                                <button class="btn btn-light btnProfile">Profile</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END OF COLLABORATOR LIST ITEM -->
-
-                    <!-- COLLABORATOR LIST ITEM -->
-                    <div class="col-xl-4 col-sm-12 col-md-8 text-center mt-5">
-                        <div class="bg-white rounded shadow-sm py-5 px-4">
-                            <img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" alt="" />
-                            <h5 class="mb-0">Nathalie Pillen</h5>
-                            <span class="small text-uppercase text-muted">CEO - Founder</span>
-                            <div class="col-4">
-                                <button class="btn btn-light btnProfile">Profile</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END OF COLLABORATOR LIST ITEM -->
-
-                    <!-- COLLABORATOR LIST ITEM -->
-                    <div class="col-xl-4 col-sm-12 col-md-8 text-center mt-5">
-                        <div class="bg-white rounded shadow-sm py-5 px-4">
-                            <img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" alt="" />
-                            <h5 class="mb-0">Nathalie Pillen</h5>
-                            <span class="small text-uppercase text-muted">CEO - Founder</span>
-                            <div class="col-4">
-                                <button class="btn btn-light btnProfile">Profile</button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <!-- END OF COLLABORATORS -->

@@ -87,8 +87,26 @@ function generateUserProfile($user, $database){
 }
 
 //GENERATE USER COLLABORATORS ON THE PAGE
-function generateUserCollabs(){
-
+function generateUserCollabs($user, $database){
+    foreach($user->collaborators as $collabId){
+        $data = array("_id" => new MongoDB\BSON\ObjectId($collabId));
+        $result = readOneDB($database, "Users", $data);
+        $name = $result['first_name'].' '.$result['last_name'];
+        $job_title= $result['job_title'];
+        $avatar = $result['profile_image'];
+    echo <<<EOT
+        <div class="col-xl-4 col-sm-12 col-md-8 text-center mt-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4">
+                <img src=$avatar width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm" alt="" />
+                <h5 class="mb-0">$name</h5>
+                <span class="small text-uppercase text-muted">$job_title</span>
+                <div class="col-4">
+                    <button class="btn btn-light btnProfile">Profile</button>
+                </div>
+            </div>
+        </div>
+        EOT;
+    }
 }
 
 //---------------------------------------------------------------
@@ -120,16 +138,52 @@ function getUserProjects($data){
 }
 
 //GENERATE ALL THE PROJECTS ON THE DASHBOARD PAGE FROM THE USER
-function generateUserProjects($userProjectsId){
-    $data = array();
-    $projects = array();
-    $database = connectDB("KasraTabrizi", "codebook");
-    $collectionName = "Projects";
-    foreach($userProjectsId as $id){
-        $data = array("_id" => $id);
-        readOneDB($database, $collectionName, $data);
+function generateUserProjects($user, $database){
+
+    //create a for foreach that iterates through each project id and 
+    foreach($user->projects as $projectId){
+        //retrieve each project
+        $data = array("_id" => new MongoDB\BSON\ObjectId($projectId));
+        $result = readOneDB($database, "Projects", $data);
+        $title = $result['title'];
+        $description = $result['description'];
+        //generate html for that project
+        echo <<<EOT
+        <div class="container-fluid resultsContainer">
+            <div class="row resultsChild">
+                <div class="col col-8">
+                    <div class="row">$title</div>
+                    <div class="row">
+                        <div>
+                            <header>DESCRIPTION</header>
+                        </div>
+                        <div>
+                            <p>$description</p>
+                        </div>
+                    </div>
+                    <div class="row">COLLABORATORS</div>
+                    <div class="row">SKILLS</div>
+        EOT;
+        echo '<ul class="social mb-0 list-inline mt-3">';
+        foreach($result->skills as $skill){
+            $data = array("_id" => new MongoDB\BSON\ObjectId($skill));
+            $result = readOneDB($database, "Skills", $data);
+            $iconImageLink = $result['icon-image'];
+            echo <<<EOT
+                <li class="list-inline-item">
+                    <img src=$iconImageLink alt="">
+                </li>
+            EOT;
+        }
+        echo <<<EOT
+        </div>
+            <div class="col col-4">
+                <button class="btn btn-primary btnGithub">GITHUB</button>
+            </div>
+            </div>
+        </div>
+        EOT;
     }
-    
 }
 //---------------------------------------------------------------
 //SKILL RELATED FUNCTIONS
